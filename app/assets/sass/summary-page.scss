@@ -1,0 +1,151 @@
+// SUMMARY PAGE STYLES
+
+@import 'elements';
+
+.actions,
+.meta-data{
+  margin-bottom: 20px;
+}
+
+.actions{
+  margin-top: 45px;
+  margin-bottom: 15px;
+  a{
+    font-weight: bold;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+    @extend .no-visited-style;
+  }
+  .action{
+    margin-bottom: 5px;
+  }
+}
+
+.meta-data{
+  dt{
+    @include core-16;
+  }
+  dd{
+    @include bold-19();
+    margin-bottom: $gutter/2;
+  }
+  .last-editor{
+    display: block;
+    @include core-16;  
+  }
+}
+
+.summary-table{
+  margin-top: $gutter;
+  td{
+    vertical-align: top;
+    strong{
+      @include bold-16;
+    }
+  }
+
+  margin-bottom: $gutter;
+  thead{
+    th{
+      padding-top: 45px;
+    }
+  }
+  .section-name{
+    width: 33.33%;
+    h2{
+      @include bold-24();  
+      a{
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+        @extend .no-visited-style;
+      }  
+    }
+  }
+  .section-number{
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+  }
+  .section-status{    
+    width: 10%;
+
+    .status{
+      text-transform: uppercase;
+      font-size: 14px;
+      background-color: black;
+      color: white;
+      padding: 3px 7px 2px 7px;
+
+      display: block;
+      padding-top: 5px;
+      margin-top: -5px;
+      float: right;
+
+
+      &.complete{
+        //background-color: green;
+      }
+      &.incomplete{
+        background-color: orange;
+      }
+      &.not-started{
+        background-color: grey;
+      }
+      &.locked{
+        background-color: black;
+      }
+    }
+  }
+  .edit-link {
+    width: 2%;
+    padding-right: 0;
+    text-align: right;
+    a{
+      @include bold-19();
+      margin-right: 0;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+      @extend .no-visited-style;    
+    }
+  }
+  .question{
+    color: $secondary-text-colour;
+  }
+  .answer{
+    padding-left: 10px;
+    .tab{
+      display: block;
+      width: 33.33%;
+      float: left;
+    }
+  }
+}
+
+.overview{
+  .summary-table {
+    border-top: 1px solid $border-colour;
+    thead th{
+      padding: 15px 0 10px 0;
+    }
+    .section-number{
+      width: $gutter;
+    }
+    .section-status{
+      text-align: right;
+    }
+    .edit-link{
+      width: 3%;
+    }
+    .section-name.locked{
+      color: $secondary-text-colour;
+    }
+  }
+}
+
+

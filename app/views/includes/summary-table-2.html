@@ -1,0 +1,50 @@
+<table class="summary-table">
+	{{#data}}
+	<thead>
+		<tr>
+			<th class="section-name {{ status }}" {{^isOverview}}colspan="2"{{/isOverview}}>
+				<h2>
+					
+					{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+					
+				</h2>
+			</th>
+			{{#isOverview}}
+			<th class="section-status">
+				{{#statusMessage }}
+				<span class="status {{ status }}">{{ statusMessage }}</span>
+				{{/statusMessage }}
+			</th>
+			{{/isOverview}}
+			<th class="edit-link">
+				{{#editable}}
+				<a href="" class="">
+					Edit
+				</a>
+				{{/editable}}
+			</th>
+		</tr>
+	</thead>
+	{{^isOverview}}
+	<tbody>
+		{{#questions}}
+		<tr>
+			<td class="question">
+				{{ name }}
+			</td>
+			<td class="answer">
+				{{{ value }}}
+			</td>
+			<td class="edit-link">
+				{{#editable}}
+				<a href="">
+					Edit
+				</a>
+				{{/editable}}
+			</td>
+		</tr>
+		{{/questions}}
+	</tbody>
+	{{/isOverview}}
+   	{{/data}}
+</table>

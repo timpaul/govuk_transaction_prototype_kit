@@ -1,0 +1,188 @@
+{
+	  "service-name": "Repossess a property",
+	  "noun": "claim",
+	  "actions": [
+	  	{
+	  		"action": "Print"
+	   	},
+	  	{
+	  		"action": "Delete"
+	   	}
+	  ],
+	  "meta": [
+	  	{
+	  		"name": "Last edited on",
+	   		"value" : "15 September 2015"
+	   	},
+	  	{
+	  		"name": "Last edited by",
+	   		"value" : "John Smith"
+	   	}
+	  ],
+	  "data": [
+	    { 
+	    	"name":"Property", 
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Type of property",
+	    			"value": "A self-contained house, flat or bedsit",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Address",
+	    			"value": "102 Petty France, London SW1H 9AJ",
+	    			"editable": false
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Claimants", 
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Type of claimant",
+	    			"value": "A private landlord (individual)",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Number of claimants",
+	    			"value": 1,
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Full name",
+	    			"value": "Mr Joe Bloggs",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Full address",
+	    			"value": "102 Petty France, London SW1H 9AJ",
+	    			"editable": false
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Defendants", 
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Number of defendants",
+	    			"value": 1,
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Full name",
+	    			"value": "Miss Jane Smith",
+	    			"editable": false
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Notice", 
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Person who gave notice",
+	    			"value": "Joe Bloggs",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "How the notice was given",
+	    			"value": "In person",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Date notice served",
+	    			"value": "1 January 2014",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Date notice ended",
+	    			"value": "1 March 2014",
+	    			"editable": false
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Tenancy agreement", 
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Type of tenancy agreement",
+	    			"value": "Assured shorthold tenancy",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Number of tenancy agreements",
+	    			"value": 1,
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Start date",
+	    			"value": "1 Jan 2013",
+	    			"editable": false
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Licences", 
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "HMO licence held",
+	    			"value": "Not applicable",
+	    			"editable": false
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Deposit", 
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Deposit paid",
+	    			"value": "No",
+	    			"editable": false
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Claim costs", 
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Court fee",
+	    			"value": "£280",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Fixed legal fees",
+	    			"value": "None",
+	    			"editable": false
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Court", 
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Claimant to be heard at court if there's a hearing",
+	    			"value": "Yes",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Name",
+	    			"value": "Lambeth County Court and Family Court",
+	    			"editable": false
+	    		},
+	    		{
+	    			"name": "Address",
+	    			"value": "Hearing Centre, Court House, Cleaver Street, Kennington Road SE11 4DZ",
+	    			"editable": false
+	    		}
+	    	]
+	    }
+	  ]
+	}

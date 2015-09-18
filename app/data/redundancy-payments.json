@@ -1,0 +1,61 @@
+{
+	  "service-name": "Claim redundancy payments",
+	  "noun": "claim",
+	  "actions": [
+	  	{
+	  		"action": "Print"
+	   	},
+	  	{
+	  		"action": "Delete"
+	   	}
+	  ],
+	  "data": [
+	    { 
+	    	"name":"The job from which you were made redundant",
+	    	"number": 1,
+	    	"editable": false,
+	    	"questions": [
+	    		{
+	    			"name": "Job title",
+	    			"value": "Manager",
+	    			"editable": true
+	    		},
+	    		{
+	    			"name": "Employee, roll or works number",
+	    			"value": "None given",
+	    			"editable": true
+	    		},
+	    		{
+	    			"name": "Employment category",
+	    			"value": "Employed",
+	    			"editable": true
+	    		},
+	    		{
+	    			"name": "Start date",
+	    			"value": "12 August 1999",
+	    			"editable": true
+	    		},
+	    		{
+	    			"name": "Last day worked",
+	    			"value": "15 April 2014",
+	    			"editable": true
+	    		},
+	    		{
+	    			"name": "Was this you official end date?",
+	    			"value": "No",
+	    			"editable": true
+	    		},
+	    		{
+	    			"name": "Notice given by employer",
+	    			"value": "None",
+	    			"editable": true
+	    		},
+	    		{
+	    			"name": "Claiming compensation for loss of notice?",
+	    			"value": "Yes",
+	    			"editable": true
+	    		}
+	    	]
+	    }
+	  ]
+	}

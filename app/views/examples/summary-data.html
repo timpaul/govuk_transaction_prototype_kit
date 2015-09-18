@@ -1,0 +1,42 @@
+{{<layout}}
+
+{{$pageTitle}}Summary page{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+	  <div class="column-two-thirds">
+
+	   	<h1 class="heading-large">Start your application</h1>
+
+	  </div>
+	  <div class="column-third">
+
+	   	<ul class="actions">
+	   		<li class="print action"><a href="">Print this application</a></li>
+	   		<li class="delete action"><a href="">Delete this application</a></li>
+	   	</ul>
+
+	   	<div class="meta-data">
+
+	   		<p class="last-edited font-xsmall">Last edited on<br><span class="bold-xsmall">15 September 2015</span></p>
+
+	   		<p class="last-edited font-xsmall">Last edited by <br><span class="bold-xsmall">John Smith</span></p>
+
+	   	</div>
+
+		</div>
+	</div>
+
+	<div class="summary not-started">
+		{{>includes/summary-table-data}}
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+

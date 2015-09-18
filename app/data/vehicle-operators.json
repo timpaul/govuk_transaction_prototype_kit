@@ -1,0 +1,201 @@
+{
+	  "service-name": "Apply for a vehicle operator's licence",
+	  "noun": "application",
+	  "parts": 13,
+	  "actions": [
+	  	{
+	  		"action": "Print"
+	   	},
+	  	{
+	  		"action": "Delete"
+	   	}
+	  ],
+	  "meta": [
+	  	{
+	  		"name": "Application number",
+	   		"value" : "1280880"
+	   	},
+	  	{
+	  		"name": "Created on",
+	   		"value" : "14 September 2014"
+	   	},
+	  	{
+	  		"name": "Status",
+	   		"value" : "2 of 13 sections completed"
+	   	}
+	  ],
+	  "data": [
+	    { 
+	    	"name" : "Type of licence",
+	    	"number": 1,
+	    	"status" : "complete",
+	    	"statusMessage" : "Completed",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Business details",
+	    	"number": 2,
+	    	"status" : "complete",
+	    	"statusMessage" : "Completed",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Addresses",
+	    	"number": 3,
+	    	"status" : "incomplete",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "People",
+	    	"number": 4,
+	    	"status" : "incomplete",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Operating centres",
+	    	"number": 5,
+	    	"status" : "incomplete",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Financial evidence",
+	    	"number": 6,
+	    	"status" : "not-started",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Transport managers",
+	    	"number": 7,
+	    	"status" : "not-started",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Vehicles",
+	    	"number": 8,
+	    	"status" : "not-started",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Safety information",
+	    	"number": 9,
+	    	"status" : "not-started",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Financial history",
+	    	"number": 10,
+	    	"status" : "not-started",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Licence history",
+	    	"number": 11,
+	    	"status" : "not-started",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Convictions and penalties",
+	    	"number": 12,
+	    	"status" : "not-started",
+	    	"editable": true,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name" : "Review and declarations",
+	    	"number": 13,
+	    	"status" : "locked",
+	    	"locked" : true,
+	    	"editable": false,
+	    	"questions": [
+	    		{
+	    			"name": "Name",
+	    			"value": "Value",
+	    			"editable": true
+	    		}
+	    	]
+	    }
+	  ]
+	}
