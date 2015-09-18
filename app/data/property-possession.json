@@ -9,16 +9,6 @@
 	  		"action": "Delete"
 	   	}
 	  ],
-	  "meta": [
-	  	{
-	  		"name": "Last edited on",
-	   		"value" : "15 September 2015"
-	   	},
-	  	{
-	  		"name": "Last edited by",
-	   		"value" : "John Smith"
-	   	}
-	  ],
 	  "data": [
 	    { 
 	    	"name":"Property", 
