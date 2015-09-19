@@ -1,15 +1,15 @@
 {
-	  "service-name": "Repossess a property",
+	  "serviceName": "Repossess a property",
 	  "noun": "claim",
 	  "actions": [
 	  	{
 	  		"action": "Print"
 	   	},
 	  	{
-	  		"action": "Delete"
+	  		"action": "Cancel"
 	   	}
 	  ],
-	  "data": [
+	  "sections": [
 	    { 
 	    	"name":"Property", 
 	    	"editable": true,

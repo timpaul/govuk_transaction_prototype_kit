@@ -1,5 +1,5 @@
 {
-	  "service-name": "Apply for a vehicle operator's licence",
+	  "serviceName": "Apply for a vehicle operator's licence",
 	  "noun": "application",
 	  "actions": [
 	  	{
@@ -23,7 +23,7 @@
 	   		"value" : "2 of 13 sections completed"
 	   	}
 	  ],
-	  "data": [
+	  "sections": [
 	    { 
 	    	"name" : "Type of licence",
 	    	"number": 1,

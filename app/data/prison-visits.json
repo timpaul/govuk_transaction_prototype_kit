@@ -1,15 +1,15 @@
 {
-	  "service-name": "Visit someone in prison",
+	  "serviceName": "Visit someone in prison",
 	  "noun": "request",
 	  "actions": [
 	  	{
 	  		"action": "Print"
 	   	},
 	  	{
-	  		"action": "Delete"
+	  		"action": "Cancel"
 	   	}
 	  ],
-	  "data": [
+	  "sections": [
 	    { 
 	    	"name":"Prisoner details", 
 	    	"editable": true,

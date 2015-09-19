@@ -1,0 +1,44 @@
+{{<layout}}
+
+{{$pageTitle}}{{ question.name }}{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+	  	<div class="column-three-quarters">
+
+	  		<a href="{{ prev }}" class="link-back">Back</a>
+
+		   	<h1 class="heading-large">
+	  			<span class="heading-secondary">Question {{ question.number }}</span>
+
+		   		{{ question.name }}
+		   	</h1>
+
+		   	<form class="form">
+			   	<div class="form-group">
+			   		<label class="form-label"></label>
+			   		<input type="text" class="form-control" value="{{ question.value }}" />
+			   	</div>
+		   	</form>
+
+		   	<div class="form-group">
+		   		<a href="{{ next }}" class="button">Save and continue</a>
+		   	</div>
+
+
+	  	</div>
+	  	<div class="column-quarter">
+
+
+		</div>
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+

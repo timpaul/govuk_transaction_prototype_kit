@@ -1,0 +1,94 @@
+{{<layout}}
+
+{{$pageTitle}}Check your answers{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+	  <div class="column-three-quarters">
+
+	   	<h1 class="heading-large">
+	   		<span class="heading-secondary">Section {{ section.number }}</span>
+	   		{{ section.name }}
+	   	</h1>
+
+
+	   	<p>Please check all the information you have provided in this section.</p>
+
+
+		<div class="summary">
+			<table class="summary-table">
+				{{#section.subsections}}
+				<thead>
+					<tr>
+						<th class="section-name {{ status }}" colspan="2">				
+							<h2>
+							{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+							<h2>
+						</th>
+						<th class="edit-link">
+							{{#editable}}
+							<a href="" class="">
+								Edit
+							</a>
+							{{/editable}}
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#questions}}
+					<tr>
+						<td class="question">
+							{{ name }}
+						</td>
+						<td class="answer">
+							{{{ value }}}
+						</td>
+						<td class="edit-link">
+							{{#editable}}
+							<a href="question/{{ number }}">
+								Edit
+							</a>
+							{{/editable}}
+						</td>
+					</tr>
+					{{/questions}}
+				</tbody>
+			   	{{/section.subsections}}
+			</table>
+		</div>
+
+		<div class="form-group">
+		   	<a href="" class="button">These details are correct</a>
+		</div>
+
+
+
+	  </div>
+	  <div class="column-quarter">
+
+	   	<ul class="actions">
+	   		{{# actions }}
+	   		<li class="action"><a href="">{{ action }} this {{ noun }}</a></li>
+	   		{{/ actions }}
+	   	</ul>
+
+	   	<div class="meta-data">
+	   		{{# meta }}
+	   		<p class="last-edited font-xsmall">{{ name }}<br>
+	   			<span class="bold-xsmall">{{ value }}</span>
+	   		</p>
+	   		{{/ meta }}
+	   	</div>
+
+		</div>
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+

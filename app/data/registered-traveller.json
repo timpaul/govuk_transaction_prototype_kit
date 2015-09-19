@@ -1,6 +1,7 @@
 {
-	  "service-name": "Apply to be a Registered Traveller",
+	  "serviceName": "Apply to be a Registered Traveller",
 	  "noun": "application",
+	  "pageLevel": 2,
 	  "actions": [
 	  	{
 	  		"action": "Print"
@@ -9,58 +10,68 @@
 	  		"action": "Delete"
 	   	}
 	  ],
-	  "data": [
+	  "sections": [
 	    { 
 	    	"name": "Your details",
 	    	"editable": false,
 	    	"questions": [
 	    		{
 	    			"name": "Nationality",
+	    			"number": 1,
 	    			"value": "Australian",
 	    			"editable": true
 	    		},
 	    		{
 	    			"name": "Passport number",
+	    			"number": 2,
 	    			"value": "23463457458",
 	    			"editable": true
 	    		},
 	    		{
 	    			"name": "Full name",
+	    			"number": 3,
 	    			"value": "Jack Jones",
 	    			"editable": true
 	    		},
 	    		{
 	    			"name": "Other names",
+	    			"number": 4,
 	    			"value": "None",
 	    			"editable": true
 	    		},
 	    		{
 	    			"name": "Date of birth",
+	    			"number": 5,
 	    			"value": "27 October 1978",
 	    			"editable": true
 	    		},
 	    		{
 	    			"name": "Sex",
+	    			"number": 6,
 	    			"value": "Male",
 	    			"editable": true
 	    		},
 	    		{
 	    			"name": "Passport expiry date",
+	    			"number": 7,
 	    			"value": "2 February 2021",
 	    			"editable": true
 	    		},
 	    		{
 	    			"name": "Passport type",
+	    			"number": 8,
 	    			"value": "Non-biometric",
 	    			"editable": true
 	    		},
 	    		{
 	    			"name": "Email address",
+	    			"number": 9,
 	    			"value": "Jack.Jones@gmail.com",
 	    			"editable": true
 	    		},
 	    		{
 	    			"name": "Purpose of travel",
+	    			"number": 10,
 	    			"value": "Entrepreneur (Tier 1)",
 	    			"editable": true
 	    		}

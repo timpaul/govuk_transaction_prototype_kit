@@ -1,5 +1,5 @@
 {
-	  "service-name": "Claim redundancy payments",
+	  "serviceName": "Claim redundancy payments",
 	  "noun": "claim",
 	  "actions": [
 	  	{
@@ -9,7 +9,7 @@
 	  		"action": "Delete"
 	   	}
 	  ],
-	  "data": [
+	  "sections": [
 	    { 
 	    	"name":"The job from which you were made redundant",
 	    	"number": 1,

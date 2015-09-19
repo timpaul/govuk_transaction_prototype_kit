@@ -1,5 +1,5 @@
 <table class="summary-table">
-	{{#data}}
+	{{#sections}}
 	<thead>
 		<tr>
 			<th class="section-name {{ status }}" colspan="2">				
@@ -27,7 +27,7 @@
 			</td>
 			<td class="edit-link">
 				{{#editable}}
-				<a href="">
+				<a href="question/{{ number }}">
 					Edit
 				</a>
 				{{/editable}}
@@ -35,5 +35,5 @@
 		</tr>
 		{{/questions}}
 	</tbody>
-   	{{/data}}
+   	{{/sections}}
 </table>

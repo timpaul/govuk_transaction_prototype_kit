@@ -1,11 +1,11 @@
 <table class="summary-table">
-	{{#data}}
+	{{#sections}}
 	<thead>
 		<tr>
 			<th class="section-name {{ status }}">
 				<h2>
 					{{^locked}}
-					<a href="">
+					<a href="section-{{ number }}/">
 					{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
 					</a>
 					{{/locked}}
@@ -21,26 +21,5 @@
 			</th>
 		</tr>
 	</thead>
-	{{^isOverview}}
-	<tbody>
-		{{#questions}}
-		<tr>
-			<td class="question">
-				{{ name }}
-			</td>
-			<td class="answer">
-				{{{ value }}}
-			</td>
-			<td class="edit-link">
-				{{#editable}}
-				<a href="">
-					Edit
-				</a>
-				{{/editable}}
-			</td>
-		</tr>
-		{{/questions}}
-	</tbody>
-	{{/isOverview}}
-   	{{/data}}
+   	{{/sections}}
 </table>

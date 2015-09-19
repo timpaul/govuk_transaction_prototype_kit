@@ -1,15 +1,15 @@
 {
-	  "service-name": "Apply for an apprenticeship",
+	  "serviceName": "Apply for an apprenticeship",
 	  "noun": "application",
 	  "actions": [
 	  	{
 	  		"action": "Print"
 	   	},
 	  	{
-	  		"action": "Delete"
+	  		"action": "Cancel"
 	   	}
 	  ],
-	  "data": [
+	  "sections": [
 	    { 
 	    	"name":"Education", 
 	    	"editable": true,
