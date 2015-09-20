@@ -22,8 +22,34 @@ module.exports = {
     	return callback(null, data);
 	}
 
+
+  // Renders a section summary page
+  var getSectionData = function(service, section, callback){
+      var data = JSON.parse(fs.readFileSync('app/data/' + service + '.json', 'utf8'));
+      var sectionArray = data.sections;
+      var sectionData;
+
+      sectionArray.forEach( function (i, index, array) {
+
+        // Find the section in the JSON
+        if (section == i.number){
+
+          // Create subsection data object
+          sectionData = {
+            "serviceName" : data.serviceName,
+            "actions" : data.actions,
+            "meta" : data.meta,
+            "noun" : data.noun,
+            "section" : i
+          }
+        }
+    });
+      return callback(null, sectionData);
+  }
+
+
 	// Renders a question page
-	var renderQuestionPage = function(service, question, callback){
+	var getQuestionData = function(service, question, callback){
 
     	var data = JSON.parse(fs.readFileSync('app/data/' + service + '.json', 'utf8'));
     	var questionArray = data.sections[0].questions;
@@ -59,31 +85,6 @@ module.exports = {
 	}
 
 
-  // Renders a section summary page
-  var renderSection = function(service, section, callback){
-
-      var data = JSON.parse(fs.readFileSync('app/data/' + service + '.json', 'utf8'));
-      var sectionArray = data.sections;
-
-      var sectionData;
-
-      sectionArray.forEach( function (i, index, array) {
-
-        // Find the section in the JSON
-        if (section == i.number){
-
-          // Create subsection data object
-          sectionData = {
-            "serviceName" : data.serviceName,
-            "actions" : data.actions,
-            "meta" : data.meta,
-            "noun" : data.noun,
-            "section" : i
-          }
-        }
-    });
-      return callback(null, sectionData);
-  }
 
 
 
@@ -115,7 +116,7 @@ module.exports = {
     app.get("/service/:service/section-:section/", function (req, res) {
       var service = req.params.service;
       var section = req.params.section;
-      renderSection(service, section, function(error, data){
+      getSectionData(service, section, function(error, data){
         return res.render('transaction-pages/section-summary', data);
       })
     });
@@ -124,21 +125,21 @@ module.exports = {
     app.get("/service/:service/section-:section/check", function (req, res) {
       var service = req.params.service;
       var section = req.params.section;
-      renderSection(service, section, function(error, data){
+      getSectionData(service, section, function(error, data){
         return res.render('transaction-pages/section-check', data);
       })
     });
 
 
     // Serve question pages
-    app.get("/service/:service/question/:number", function (req, res) {
+    app.get("/service/:service/question-:number", function (req, res) {
     
       var service = req.params.service;  
       var number = req.params.number;
 
-      renderQuestionPage(service, number, function(error, data){
+      getQuestionData(service, number, function(error, data){
 
-      	return res.render('examples/question', data);
+      	return res.render('transaction-pages/question', data);
 
       })
 

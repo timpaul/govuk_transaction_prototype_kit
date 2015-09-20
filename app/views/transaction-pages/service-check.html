@@ -16,7 +16,45 @@
 
 
 		<div class="summary">
-			{{>includes/table-check}}
+			<table class="summary-table">
+				{{#sections}}
+				<thead>
+					<tr>
+						<th class="section-name {{ status }}" colspan="2">				
+							<h2>
+							{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+							<h2>
+						</th>
+						<th class="edit-link">
+							{{#editable}}
+							<a href="" class="">
+								Edit
+							</a>
+							{{/editable}}
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#questions}}
+					<tr>
+						<td class="question">
+							{{ name }}
+						</td>
+						<td class="answer">
+							{{{ value }}}
+						</td>
+						<td class="edit-link">
+							{{#editable}}
+							<a href="question/{{ number }}">
+								Edit
+							</a>
+							{{/editable}}
+						</td>
+					</tr>
+					{{/questions}}
+				</tbody>
+			   	{{/sections}}
+			</table>
 		</div>
 
 		<div class="form-group">
