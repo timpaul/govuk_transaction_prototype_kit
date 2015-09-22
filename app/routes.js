@@ -1,8 +1,10 @@
 module.exports = {
   bind : function (app) {
 
-  	var fs = require('fs');
+  var fs = require('fs');
 
+
+  // This builds the index navigation
 	var services =  {
   		"services":[
 	    	{ url: "property-possession", name: "Repossess a property" },
@@ -17,139 +19,105 @@ module.exports = {
 		]
 	}
 
-	var getServiceData = function(service, callback){
-    	var data = JSON.parse(fs.readFileSync('app/data/' + service + '.json', 'utf8'));
-    	return callback(null, data);
-	}
+
+  // Render a page
+  var renderPage = function(service, section, page, callback){
 
 
-  // Renders a section summary page
-  var getSectionData = function(service, section, callback){
+      // Read the data file for the relevant service
       var data = JSON.parse(fs.readFileSync('app/data/' + service + '.json', 'utf8'));
-      var sectionArray = data.sections;
-      var sectionData;
 
-      sectionArray.forEach( function (i, index, array) {
 
-        // Find the section in the JSON
-        if (section == i.number){
+      // Get the section-level data for the page
+      var pageData = data;
+      sectionArray = section.split('/');
 
-          // Create subsection data object
-          sectionData = {
-            "serviceName" : data.serviceName,
-            "actions" : data.actions,
-            "meta" : data.meta,
-            "noun" : data.noun,
-            "section" : i
+      if (sectionArray != ""){
+        for(var i = 0; i < sectionArray.length; i++){
+          sectionIndex = Number(sectionArray[i]) - 1;
+
+          var lastItem = false;
+          if(sectionIndex + 1 == pageData.sections.length){
+            lastItem = true;
           }
+
+          pageData = pageData.sections[sectionIndex];
+          pageData.lastItem = lastItem;
+
         }
-    });
-      return callback(null, sectionData);
+      }
+
+      // Number the current, previous and next pages
+      var currentSection = Number(sectionArray[sectionArray.length - 1]);
+      pageData.number = currentSection;
+      pageData.next = currentSection + 1;
+      pageData.prev = currentSection - 1;
+
+
+
+      // Number the subsections
+      for(var i = 0; i < pageData.sections.length; i++){
+        pageData.sections[i].number = i + 1;
+
+        if (i == pageData.sections.length - 1){
+          pageData.sections[i].lastItem = true;
+        }
+      } 
+
+      // Get the service-level data for the page
+      pageData.service = data.service;
+
+
+      // Don't show the service name in the header at the top level
+      if(section == ""){
+        pageData.service.name = "";
+      } else {
+        pageData.service.name = data.name;
+        pageData.service.section = section.replace("/", ".");
+      }
+
+      return callback(null, pageData);
+
   }
 
-
-	// Renders a question page
-	var getQuestionData = function(service, question, callback){
-
-    	var data = JSON.parse(fs.readFileSync('app/data/' + service + '.json', 'utf8'));
-    	var questionArray = data.sections[0].questions;
-    	var questionData;
-
-    	questionArray.forEach( function (i, index, array) {
-
-    		// Find the question in the JSON
-    		if (question == i.number){
-    			// Set service name
-    			var serviceName = data.serviceName;
-
-    			// Set previous page
-    			var prev = i.number -1;
-
-    			// Set next page 
-    			var next = i.number + 1;
-		    	if (index === array.length - 1){
-		    		next = "../check";
-		   		}
-
-		   		// Create question data object
-		    	questionData = {
-		    		"question": i,
-		    		"next" : next,
-		    		"prev" : i.number - 1,
-		    		"serviceName" : serviceName
-		    	}
-    		}
-		});
-
-    	return callback(null, questionData);
-	}
+  // ROUTES ================================== //
 
 
+	// Index page
+
+  app.get('/', function (req, res) {
+    res.render('index', services);
+  });
 
 
+  // Service summary page
 
-	// Serve index page
-    app.get('/', function (req, res) {
-      res.render('index', services);
-    });
+  app.get("/service/:service/:page-page", function (req, res, next) {
+    var service = req.params.service;
+    var page = req.params.page;
 
-
-
-    // Service summary page
-    app.get("/service/:service", function (req, res) {
-      var service = req.params.service;
-      getServiceData(service, function(error, data){
-        data.verb = "Complete";
-        return res.render('transaction-pages/service-summary', data);
-      })
-    });
-
-    // Serve service check pages
-    app.get("/service/:service/check", function (req, res) {
-      var service = req.params.service;
-      getServiceData(service, function(error, data){
-      	return res.render('transaction-pages/service-check', data);
-      })
-    });
-
-    // Section summary page
-    app.get("/service/:service/section-:section/", function (req, res) {
-      var service = req.params.service;
-      var section = req.params.section;
-      getSectionData(service, section, function(error, data){
-        return res.render('transaction-pages/section-summary', data);
-      })
-    });
-
-    // Section check page
-    app.get("/service/:service/section-:section/check", function (req, res) {
-      var service = req.params.service;
-      var section = req.params.section;
-      getSectionData(service, section, function(error, data){
-        return res.render('transaction-pages/section-check', data);
-      })
-    });
+    renderPage(service, "", page, function(error, data){
+      return res.render('transaction-pages/' + page + '-page', data);
+    })
+  });
 
 
-    // Serve question pages
-    app.get("/service/:service/question-:number", function (req, res) {
-    
-      var service = req.params.service;  
-      var number = req.params.number;
+  // Section pages
 
-      getQuestionData(service, number, function(error, data){
+  app.get("/service/:service/:section*/:subsections-page", function (req, res, next) {
+    var service = req.params.service;
+    var section = req.params.section;
+    var subsections = req.params.subsections;
+    var page = req.params[1];
 
-      	return res.render('transaction-pages/question', data);
+    // Add subsections if there are any
+    if(subsections){ section = section + subsections };
 
-      })
+    renderPage(service, section, page, function(error, data){
+      return res.render('transaction-pages/' + page + '-page', data);
+    })
 
-    });
-
-
-
-
-
-
+  });
 
   }
 };

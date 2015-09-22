@@ -12,22 +12,22 @@
 	  "sections": [
 	    { 
 	    	"name":"Hearing", 
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Does your condition affect your hearing?",
 	    			"value": "All the time",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Describe why your condition affects your hearing",
 	    			"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas imperdiet turpis. Nunc vitae tellus eu nisl dictum malesuada. Praesent laoreet justo eu suscipit blandit.",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Describe how you know what's being said at the moment",
 	    			"value": "In vitae ornare quam, eget hendrerit nulla. Vestibulum euismod finibus risus, ac rutrum tortor gravida tincidunt. Nunc interdum, nibh et aliquet ultricies, urna sapien dapibus nisi, a finibus ipsum lectus eu sapien.",
-	    			"editable": false
+	    			"page": false
 	    		}
 	    	]
 	    }

@@ -30,12 +30,12 @@
 	    	"number": 1,
 	    	"status" : "complete",
 	    	"statusMessage" : "Completed",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -44,12 +44,12 @@
 	    	"number": 2,
 	    	"status" : "complete",
 	    	"statusMessage" : "Completed",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -57,12 +57,12 @@
 	    	"name" : "Addresses",
 	    	"number": 3,
 	    	"status" : "incomplete",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -70,12 +70,12 @@
 	    	"name" : "People",
 	    	"number": 4,
 	    	"status" : "incomplete",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -83,12 +83,12 @@
 	    	"name" : "Operating centres",
 	    	"number": 5,
 	    	"status" : "incomplete",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -96,12 +96,12 @@
 	    	"name" : "Financial evidence",
 	    	"number": 6,
 	    	"status" : "not-started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -109,12 +109,12 @@
 	    	"name" : "Transport managers",
 	    	"number": 7,
 	    	"status" : "not-started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -122,12 +122,12 @@
 	    	"name" : "Vehicles",
 	    	"number": 8,
 	    	"status" : "not-started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -135,12 +135,12 @@
 	    	"name" : "Safety information",
 	    	"number": 9,
 	    	"status" : "not-started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -148,12 +148,12 @@
 	    	"name" : "Financial history",
 	    	"number": 10,
 	    	"status" : "not-started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -161,12 +161,12 @@
 	    	"name" : "Licence history",
 	    	"number": 11,
 	    	"status" : "not-started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -174,12 +174,12 @@
 	    	"name" : "Convictions and penalties",
 	    	"number": 12,
 	    	"status" : "not-started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -188,12 +188,12 @@
 	    	"number": 13,
 	    	"status" : "locked",
 	    	"locked" : true,
-	    	"editable": false,
+	    	"page": false,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    }

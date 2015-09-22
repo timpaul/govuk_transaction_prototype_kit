@@ -1,154 +1,179 @@
 {
-	  "serviceName": "Repossess a property",
-	  "noun": "claim",
-	  "actions": [
-	  	{
-	  		"action": "Print"
-	   	},
-	  	{
-	  		"action": "Cancel"
-	   	}
-	  ],
+	   "service":{
+		  "type": "claim",
+		  "actions": [
+		  	{
+		  		"action": "Print"
+		   	},
+		  	{
+		  		"action": "Cancel"
+		   	}
+		  ] 	
+	  },
+	  "name": "Repossess a property",
+	  "numbered": false,
 	  "sections": [
 	    { 
 	    	"name":"Property", 
-	    	"editable": true,
-	    	"questions": [
+	    	"page": true,
+	    	"sections": [
 	    		{
 	    			"name": "Type of property",
-	    			"value": "A self-contained house, flat or bedsit"
+	    			"value": "A self-contained house, flat or bedsit", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Address",
-	    			"value": "102 Petty France, London SW1H 9AJ"
+	    			"value": "102 Petty France, London SW1H 9AJ", 
+	    			"page": false
 	    		}
 	    	]
 	    },
 	    { 
 	    	"name":"Claimants", 
-	    	"editable": true,
-	    	"questions": [
+	    	"page": true,
+	    	"sections": [
 	    		{
 	    			"name": "Type of claimant",
-	    			"value": "A private landlord (individual)"
+	    			"value": "A private landlord (individual)", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Number of claimants",
-	    			"value": 1
+	    			"value": 1, 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Full name",
-	    			"value": "Mr Joe Bloggs"
+	    			"value": "Mr Joe Bloggs", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Full address",
-	    			"value": "102 Petty France, London SW1H 9AJ"
+	    			"value": "102 Petty France, London SW1H 9AJ", 
+	    			"page": false
 	    		}
 	    	]
 	    },
 	    { 
 	    	"name":"Defendants", 
-	    	"editable": true,
-	    	"questions": [
+	    	"page": true,
+	    	"sections": [
 	    		{
 	    			"name": "Number of defendants",
-	    			"value": 1
+	    			"value": 1, 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Full name",
-	    			"value": "Miss Jane Smith"
+	    			"value": "Miss Jane Smith", 
+	    			"page": false
 	    		}
 	    	]
 	    },
 	    { 
 	    	"name":"Notice", 
-	    	"editable": true,
-	    	"questions": [
+	    	"page": true,
+	    	"sections": [
 	    		{
 	    			"name": "Person who gave notice",
-	    			"value": "Joe Bloggs"
+	    			"value": "Joe Bloggs", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "How the notice was given",
-	    			"value": "In person"
+	    			"value": "In person", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Date notice served",
-	    			"value": "1 January 2014"
+	    			"value": "1 January 2014", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Date notice ended",
-	    			"value": "1 March 2014"
+	    			"value": "1 March 2014", 
+	    			"page": false
 	    		}
 	    	]
 	    },
 	    { 
 	    	"name":"Tenancy agreement", 
-	    	"editable": true,
-	    	"questions": [
+	    	"page": true,
+	    	"sections": [
 	    		{
 	    			"name": "Type of tenancy agreement",
-	    			"value": "Assured shorthold tenancy"
+	    			"value": "Assured shorthold tenancy", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Number of tenancy agreements",
-	    			"value": 1
+	    			"value": 1, 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Start date",
-	    			"value": "1 Jan 2013"
+	    			"value": "1 Jan 2013", 
+	    			"page": false
 	    		}
 	    	]
 	    },
 	    { 
 	    	"name":"Licences", 
-	    	"editable": true,
-	    	"questions": [
+	    	"page": true,
+	    	"sections": [
 	    		{
 	    			"name": "HMO licence held",
-	    			"value": "Not applicable"
+	    			"value": "Not applicable", 
+	    			"page": false
 	    		}
 	    	]
 	    },
 	    { 
 	    	"name":"Deposit", 
-	    	"editable": true,
-	    	"questions": [
+	    	"page": true,
+	    	"sections": [
 	    		{
 	    			"name": "Deposit paid",
-	    			"value": "No"
+	    			"value": "No", 
+	    			"page": false
 	    		}
 	    	]
 	    },
 	    { 
 	    	"name":"Claim costs", 
-	    	"editable": true,
-	    	"questions": [
+	    	"page": true,
+	    	"sections": [
 	    		{
 	    			"name": "Court fee",
-	    			"value": "£280"
+	    			"value": "£280", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Fixed legal fees",
-	    			"value": "None"
+	    			"value": "None", 
+	    			"page": false
 	    		}
 	    	]
 	    },
 	    { 
 	    	"name":"Court", 
-	    	"editable": true,
-	    	"questions": [
+	    	"page": true,
+	    	"sections": [
 	    		{
 	    			"name": "Claimant to be heard at court if there's a hearing",
-	    			"value": "Yes"
+	    			"value": "Yes", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Name",
-	    			"value": "Lambeth County Court and Family Court"
+	    			"value": "Lambeth County Court and Family Court", 
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Address",
-	    			"value": "Hearing Centre, Court House, Cleaver Street, Kennington Road SE11 4DZ"
+	    			"value": "Hearing Centre, Court House, Cleaver Street, Kennington Road SE11 4DZ", 
+	    			"page": false
 	    		}
 	    	]
 	    }

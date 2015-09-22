@@ -29,12 +29,12 @@
 	    	"number": 1,
 	    	"status" : "complete",
 	    	"statusMessage" : "Done",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -43,12 +43,12 @@
 	    	"number": 2,
 	    	"status" : "complete",
 	    	"statusMessage" : "Done",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -57,12 +57,12 @@
 	    	"number": 3,
 	    	"status" : "incomplete",
 	    	"statusMessage" : "Started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -71,12 +71,12 @@
 	    	"number": 4,
 	    	"status" : "incomplete",
 	    	"statusMessage" : "Started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -85,12 +85,12 @@
 	    	"number": 5,
 	    	"status" : "incomplete",
 	    	"statusMessage" : "Started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -99,12 +99,12 @@
 	    	"number": 6,
 	    	"status" : "not-started",
 	    	"statusMessage" : "Not started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -113,12 +113,12 @@
 	    	"number": 7,
 	    	"status" : "not-started",
 	    	"statusMessage" : "Not started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -127,12 +127,12 @@
 	    	"number": 8,
 	    	"status" : "not-started",
 	    	"statusMessage" : "Not started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -141,12 +141,12 @@
 	    	"number": 9,
 	    	"status" : "not-started",
 	    	"statusMessage" : "Not started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -155,12 +155,12 @@
 	    	"number": 10,
 	    	"status" : "not-started",
 	    	"statusMessage" : "Not started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -169,12 +169,12 @@
 	    	"number": 11,
 	    	"status" : "not-started",
 	    	"statusMessage" : "Not started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -183,12 +183,12 @@
 	    	"number": 12,
 	    	"status" : "not-started",
 	    	"statusMessage" : "Not started",
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    },
@@ -197,12 +197,12 @@
 	    	"number": 13,
 	    	"status" : "locked",
 	    	"statusMessage" : "Locked",
-	    	"editable": false,
+	    	"page": false,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    }

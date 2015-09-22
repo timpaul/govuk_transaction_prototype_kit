@@ -1,94 +1,96 @@
-{
-	  "serviceName": "Renew your passport",
-	  "noun": "application",
-	  "pageLevel": 2,
-	  "showQuestions": false,
-	  "actions": [
-	  	{
-	  		"action": "Cancel"
-	   	}
-	  ],
+{	  
+	"service":{
+		  "name": "Renew your passport",
+		  "type": "application",
+		  "parts": 1,
+		  "actions": [
+		  	{
+		  		"action": "Cancel"
+		   	}
+		  ] 	
+	  },
+	  "name": "Renew your passport",
 	  "sections": [
 	    { 
-	    	"editable": false,
-	    	"questions": [
+	    	"page": false,
+	    	"sections": [
 	    		{
 	    			"name": "Existing passport",
 	    			"number": 1,
 	    			"value": "23463457458",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Expires",
 	    			"number": 2,
 	    			"value": "22 May 2014",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Full name",
 	    			"number": 3,
 	    			"value": "Jack Jones",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Gender",
 	    			"number": 4,
 	    			"value": "Male",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Date of birth",
 	    			"number": 5,
 	    			"value": "27 October 1978",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Place of birth",
 	    			"number": 6,
 	    			"value": "Brighton, UK",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Passport photo",
 	    			"number": 7,
 	    			"value": "<img src='/public/images/passport-photo.png' />",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Contact details",
 	    			"number": 8,
 	    			"value": "<p>52 Festive Road <br/> London <br/> SW9 4LE </p><p>jack.jones@gmail.com</p><p>Tel: 07729 458234</p>",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Send progress updates",
 	    			"number": 9,
 	    			"value": "By email and text message",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Service",
 	    			"number": 10,
 	    			"value": "3 week service",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "New passport delivery address",
 	    			"number": 11,
 	    			"value": "Your new passport will be sent by secure delivery to your <strong>home address</strong>",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Passport size",
 	    			"number": 12,
 	    			"value": "You don't require a braille sticker",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Total cost",
 	    			"number": 13,
 	    			"value": "<strong>£85.50</strong>",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    }

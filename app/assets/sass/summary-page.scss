@@ -116,6 +116,7 @@
   }
   .question{
     color: $secondary-text-colour;
+    width: 33.33%;
   }
   .answer{
     padding-left: 10px;
@@ -148,4 +149,7 @@
   }
 }
 
+.link-back + h1 {
+  margin-top: 0;
+}
 

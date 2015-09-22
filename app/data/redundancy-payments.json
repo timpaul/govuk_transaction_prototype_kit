@@ -13,47 +13,47 @@
 	    { 
 	    	"name":"The job from which you were made redundant",
 	    	"number": 1,
-	    	"editable": false,
+	    	"page": false,
 	    	"questions": [
 	    		{
 	    			"name": "Job title",
 	    			"value": "Manager",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Employee, roll or works number",
 	    			"value": "None given",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Employment category",
 	    			"value": "Employed",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Start date",
 	    			"value": "12 August 1999",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Last day worked",
 	    			"value": "15 April 2014",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Was this you official end date?",
 	    			"value": "No",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Notice given by employer",
 	    			"value": "None",
-	    			"editable": true
+	    			"page": true
 	    		},
 	    		{
 	    			"name": "Claiming compensation for loss of notice?",
 	    			"value": "Yes",
-	    			"editable": true
+	    			"page": true
 	    		}
 	    	]
 	    }

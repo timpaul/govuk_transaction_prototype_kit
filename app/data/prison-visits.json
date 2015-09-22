@@ -12,68 +12,68 @@
 	  "sections": [
 	    { 
 	    	"name":"Prisoner details", 
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Arnold Smith",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Date of birth",
 	    			"value": "25 October 1987",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Prisoner number",
 	    			"value": "a1234bc",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Prison",
 	    			"value": "Rochester",
-	    			"editable": false
+	    			"page": false
 	    		}
 	    	]
 	    },
 	    { 
 	    	"name":"Visitor details", 
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "Visitor 1",
 	    			"value": "Jimmy Smith <br> Born 19 August 1992 <br> Adult",
-	    			"editable": false
+	    			"page": false
 	    		},{
 	    			"name": "Visitor 2",
 	    			"value": "Lane Staley <br> Born 5 April 2002 <br> Child",
-	    			"editable": false
+	    			"page": false
 	    		},{
 	    			"name": "Visitor 3",
 	    			"value": "Jeff Buckley <br> Born 17 November 1966 <br> Adult",
-	    			"editable": false
+	    			"page": false
 	    		}
 	    		
 	    	]
 	    },
 	    { 
 	    	"name":"Your visit", 
-	    	"editable": true,
+	    	"page": true,
 	    	"questions": [
 	    		{
 	    			"name": "First choice",
 	    			"value": "Saturday 6 December <br> 9:30am <br> 2hrs",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Alternative 1",
 	    			"value": "Monday 8 December <br> 2:00pm <br> 2hrs",
-	    			"editable": false
+	    			"page": false
 	    		},
 	    		{
 	    			"name": "Alternative 2",
 	    			"value": "Tuesday 9 December <br> 2:00pm <br> 2hrs",
-	    			"editable": false
+	    			"page": false
 	    		}
 	    	]
 	    }
