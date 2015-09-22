@@ -1,0 +1,74 @@
+{{<layout}}
+
+{{$pageTitle}}Summary page{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+	  <div class="column-three-quarters">
+
+	  	<a href="../{{ prev }}/question-page" class="link-back">Back</a>
+
+	   	<h1 class="heading-large">
+	   		<span class="heading-secondary">
+	   			Question {{service.section}}
+	   		</span>
+	   		{{ name }}
+	   	</h1>
+
+
+		<form class="form">
+
+		{{#sections}}
+
+		   	<div class="form-group">
+		   		<label class="form-label">{{ name }}</label>
+		   		<textarea class="form-control">{{ value }}</textarea>
+		   	</div>
+
+	   	{{/sections}}
+
+		   	{{^lastItem}}
+				<div class="form-group">
+		   			<a href="../{{ next }}/question-page" class="button">Save and continue</a>
+	   			</div>
+			{{/lastItem}}
+
+	   		{{#lastItem}}
+				<div class="form-group">
+	   				<a href="../check-page" class="button">Check your answers</a>
+	   			</div>
+			{{/lastItem}}
+
+	   	</form>
+
+
+
+	  </div>
+	  <div class="column-quarter">
+
+	   	<ul class="actions">
+	   		{{# service.actions }}
+	   		<li class="action"><a href="">{{ action }} this {{ service.type }}</a></li>
+	   		{{/ service.actions }}
+	   	</ul>
+
+	   	<div class="meta-data">
+	   		{{# service.meta }}
+	   		<p class="last-edited font-xsmall">{{ name }}<br>
+	   			<span class="bold-xsmall">{{ value }}</span>
+	   		</p>
+	   		{{/ service.meta }}
+	   	</div>
+
+		</div>
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+

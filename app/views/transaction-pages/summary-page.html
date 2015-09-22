@@ -1,0 +1,97 @@
+{{<layout}}
+
+{{$pageTitle}}Summary page{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+	  <div class="column-three-quarters">
+
+	   	<h1 class="heading-large">
+	   		<span class="heading-secondary">
+	   		{{#service.section}}
+	   			Section {{service.section}}
+	   		{{/service.section}}
+	   		{{^service.section}}
+	   			Service
+	   		{{/service.section}}
+	   		</span>
+	   		{{ name }}
+	   	</h1>
+
+
+	   	<p>Complete the {{ parts }} sections below. You can complete them in any order.</p>
+
+
+ 
+		<div class="summary overview">
+			<table class="summary-table">
+				{{#sections}}
+				<thead>
+					<tr>
+						<th class="section-name {{ status }}">
+							<h2>
+								{{^locked}}
+
+								{{^page}}
+								<a href="{{ number }}/1/question-page">
+								{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+								</a>
+								{{/page}}
+
+								{{#page}}
+								<a href="{{ number }}/summary-page">
+								{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+								</a>
+								{{/page}}
+
+
+								{{/locked}}
+
+
+
+								{{#locked}}
+								{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+								{{/locked}}
+							</h2>
+						</th>
+						<th class="section-status">
+							{{#statusMessage }}
+							<span class="status {{ status }}">{{ statusMessage }}</span>
+							{{/statusMessage }}
+						</th>
+					</tr>
+				</thead>
+			   	{{/sections}}
+			</table>
+		</div>
+
+
+	  </div>
+	  <div class="column-quarter">
+
+	   	<ul class="actions">
+	   		{{# service.actions }}
+	   		<li class="action"><a href="">{{ action }} this {{ service.type }}</a></li>
+	   		{{/ service.actions }}
+	   	</ul>
+
+	   	<div class="meta-data">
+	   		{{# service.meta }}
+	   		<p class="last-edited font-xsmall">{{ name }}<br>
+	   			<span class="bold-xsmall">{{ value }}</span>
+	   		</p>
+	   		{{/ service.meta }}
+	   	</div>
+
+		</div>
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+
