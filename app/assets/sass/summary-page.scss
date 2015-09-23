@@ -63,6 +63,9 @@
         }
         @extend .no-visited-style;
       }  
+      .locked{
+        color: $secondary-text-colour;
+      }
     }
   }
   .section-number{

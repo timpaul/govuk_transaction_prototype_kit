@@ -1,0 +1,19 @@
+<tbody>
+	{{#sections}}
+	<tr>
+		<td class="question">
+			{{ name }}
+		</td>
+		<td class="answer">
+			{{{ value }}}
+		</td>
+		<td class="edit-link">
+			{{#page}}
+			<a href="./{{ number }}/question-page?editing=true">
+				Edit
+			</a>
+			{{/page}}
+		</td>
+	</tr>
+	{{/sections}}
+</tbody>

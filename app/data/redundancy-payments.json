@@ -1,20 +1,22 @@
 {
-	  "serviceName": "Claim redundancy payments",
-	  "noun": "claim",
-	  "actions": [
-	  	{
-	  		"action": "Print"
-	   	},
-	  	{
-	  		"action": "Delete"
-	   	}
-	  ],
+	   "service":{
+		  "type": "claim",
+		  "actions": [
+		  	{
+		  		"action": "Print"
+		   	},
+		  	{
+		  		"action": "Delete"
+		   	}
+		  ] 	
+	  },
+	  "name": "Claim redundancy payments",
 	  "sections": [
 	    { 
 	    	"name":"The job from which you were made redundant",
 	    	"number": 1,
 	    	"page": false,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Job title",
 	    			"value": "Manager",

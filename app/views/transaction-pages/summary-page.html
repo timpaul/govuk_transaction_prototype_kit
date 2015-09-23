@@ -22,8 +22,7 @@
 	   	</h1>
 
 
-	   	<p>Complete the {{ parts }} sections below. You can complete them in any order.</p>
-
+	   	<p>Complete the {{ parts }} sections below.</p>
 
  
 		<div class="summary overview">
@@ -51,9 +50,10 @@
 								{{/locked}}
 
 
-
 								{{#locked}}
-								{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+									<span class="locked" title="You can't complete this item right now">
+								{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }} (locked)
+									</span>
 								{{/locked}}
 							</h2>
 						</th>

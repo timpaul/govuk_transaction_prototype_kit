@@ -1,37 +1,37 @@
-{
-	  "serviceName": "Apply for a vehicle operator's licence",
-	  "noun": "application",
-	  "parts": 13,
-	  "actions": [
-	  	{
-	  		"action": "Print"
-	   	},
-	  	{
-	  		"action": "Delete"
-	   	}
-	  ],
-	  "meta": [
-	  	{
-	  		"name": "Application number",
-	   		"value" : "1280880"
-	   	},
-	  	{
-	  		"name": "Created on",
-	   		"value" : "14 September 2014"
-	   	},
-	  	{
-	  		"name": "Status",
-	   		"value" : "2 of 13 sections completed"
-	   	}
-	  ],
+{	"service":{
+		  "type": "application",
+		  "parts": 13,
+		  "actions": [
+		  	{
+		  		"action": "Cancel"
+		   	},
+		  	{
+		  		"action": "Print"
+		   	}
+		  ],
+		  "meta": [
+		  	{
+		  		"name": "Application number",
+		   		"value" : "1280880"
+		   	},
+		  	{
+		  		"name": "Created on",
+		   		"value" : "14 September 2014"
+		   	},
+		  	{
+		  		"name": "Status",
+		   		"value" : "2 of 13 sections completed"
+		   	}
+		  ]	
+	  },
+	  "name": "Apply for a vehicle operator's licence",
 	  "sections": [
 	    { 
 	    	"name" : "Type of licence",
-	    	"number": 1,
 	    	"status" : "complete",
 	    	"statusMessage" : "Completed",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -41,11 +41,10 @@
 	    },
 	    { 
 	    	"name" : "Business details",
-	    	"number": 2,
 	    	"status" : "complete",
 	    	"statusMessage" : "Completed",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -55,10 +54,9 @@
 	    },
 	    { 
 	    	"name" : "Addresses",
-	    	"number": 3,
 	    	"status" : "incomplete",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -68,10 +66,9 @@
 	    },
 	    { 
 	    	"name" : "People",
-	    	"number": 4,
 	    	"status" : "incomplete",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -81,10 +78,9 @@
 	    },
 	    { 
 	    	"name" : "Operating centres",
-	    	"number": 5,
 	    	"status" : "incomplete",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -94,10 +90,9 @@
 	    },
 	    { 
 	    	"name" : "Financial evidence",
-	    	"number": 6,
 	    	"status" : "not-started",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -107,10 +102,9 @@
 	    },
 	    { 
 	    	"name" : "Transport managers",
-	    	"number": 7,
 	    	"status" : "not-started",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -120,10 +114,9 @@
 	    },
 	    { 
 	    	"name" : "Vehicles",
-	    	"number": 8,
 	    	"status" : "not-started",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -133,10 +126,9 @@
 	    },
 	    { 
 	    	"name" : "Safety information",
-	    	"number": 9,
 	    	"status" : "not-started",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -146,10 +138,9 @@
 	    },
 	    { 
 	    	"name" : "Financial history",
-	    	"number": 10,
 	    	"status" : "not-started",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -159,10 +150,9 @@
 	    },
 	    { 
 	    	"name" : "Licence history",
-	    	"number": 11,
 	    	"status" : "not-started",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -172,10 +162,9 @@
 	    },
 	    { 
 	    	"name" : "Convictions and penalties",
-	    	"number": 12,
 	    	"status" : "not-started",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -185,11 +174,10 @@
 	    },
 	    { 
 	    	"name" : "Review and declarations",
-	    	"number": 13,
 	    	"status" : "locked",
 	    	"locked" : true,
 	    	"page": false,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",

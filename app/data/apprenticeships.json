@@ -1,19 +1,22 @@
 {
-	  "serviceName": "Apply for an apprenticeship",
-	  "noun": "application",
-	  "actions": [
-	  	{
-	  		"action": "Print"
-	   	},
-	  	{
-	  		"action": "Cancel"
-	   	}
-	  ],
+	"service":{
+		  "type": "application",
+		  "parts": 6,
+		  "actions": [
+		  	{
+		  		"action": "Print"
+		   	},
+		  	{
+		  		"action": "Cancel"
+		   	}
+		  ] 	
+	  },
+	  "name": "Apply for an apprenticeship",
 	  "sections": [
 	    { 
 	    	"name":"Education", 
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name of most recent school or college",
 	    			"value": "St Bernards School",
@@ -29,7 +32,7 @@
 	    { 
 	    	"name":"Qualifications", 
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "GCSE Maths",
 	    			"value": "<span class='tab'>Grade A</span><span class='tab'>2011</span>",
@@ -55,7 +58,7 @@
 	    { 
 	    	"name":"Work experience", 
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Dec 2013 - Current",
 	    			"value": "Superdrug <br> Customer service <br> Helping customers at the checkout",
@@ -71,7 +74,7 @@
 	    { 
 	    	"name":"About you", 
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Examples of your strengths",
 	    			"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas imperdiet turpis. Nunc vitae tellus eu nisl dictum malesuada. Praesent laoreet justo eu suscipit blandit.",
@@ -92,7 +95,7 @@
 	    { 
 	    	"name":"Additional questions", 
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Why would you like to become an apprentice?",
 	    			"value": "To enable me to attain the skills I need to become employable",

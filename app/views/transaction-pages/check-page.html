@@ -24,57 +24,32 @@
 
 	   	<p>Please check all the information you have provided below.</p>
 
-
  
 		<div class="summary">
 			<table class="summary-table">
-				{{#sections}}
-				<thead>
-					<tr>
-						<th class="section-name {{ status }}" colspan="2">				
-							<h2>
-	   						{{#numbered}}
-								{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}
-	   						{{/numbered}}
 
-							{{ name }}
-							<h2>
-						</th>
-						<th class="edit-link">
-							{{#page}}
-							<a href="./{{ number }}/question-page?editing=true" class="">
-								Edit
-							</a>
-							{{/page}}
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					{{#sections}}
-					<tr>
-						<td class="question">
-							{{ name }}
-						</td>
-						<td class="answer">
-							{{{ value }}}
-						</td>
-						<td class="edit-link">
-							{{#page}}
-							<a href="question/{{ number }}">
-								Edit
-							</a>
-							{{/page}}
-						</td>
-					</tr>
-					{{/sections}}
-				</tbody>
-			   	{{/sections}}
+			{{#subsections}}
+				{{>includes/2-level-check-table}}
+	   		{{/subsections}}
+
+	   		{{^subsections}}
+				{{>includes/1-level-check-table}}
+	   		{{/subsections}}
+
 			</table>
 		</div>
 
-		<div class="form-group">
-		   	<a href="" class="button">These details are correct</a>
-		</div>
+		{{^lastItem}}
+			<div class="form-group">
+	   			<a href="../{{ next }}/1/question-page" class="button">These details are correct</a>
+   			</div>
+		{{/lastItem}}
+
+   		{{#lastItem}}
+			<div class="form-group">
+   				<a href="../summary-page" class="button">Check your answers</a>
+   			</div>
+		{{/lastItem}}
 
 
 

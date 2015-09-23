@@ -32,10 +32,15 @@ module.exports = {
       var pageData = data;
       sectionArray = section.split('/');
 
+
+      // Find the relevant section in the service
       if (sectionArray != ""){
         for(var i = 0; i < sectionArray.length; i++){
+
           sectionIndex = Number(sectionArray[i]) - 1;
 
+          // If it's the last section, add a flag so we can 
+          // send people on to the next section
           var lastItem = false;
           if(sectionIndex + 1 == pageData.sections.length){
             lastItem = true;
@@ -47,6 +52,7 @@ module.exports = {
         }
       }
 
+
       // Number the current, previous and next pages
       var currentSection = Number(sectionArray[sectionArray.length - 1]);
       pageData.number = currentSection;
@@ -54,15 +60,36 @@ module.exports = {
       pageData.prev = currentSection - 1;
 
 
+      if (pageData.sections){
 
-      // Number the subsections
-      for(var i = 0; i < pageData.sections.length; i++){
-        pageData.sections[i].number = i + 1;
+        // Number the sections
+        for(var i = 0; i < pageData.sections.length; i++){
 
-        if (i == pageData.sections.length - 1){
-          pageData.sections[i].lastItem = true;
-        }
-      } 
+          // Number each section
+          pageData.sections[i].number = i + 1;
+
+          // Flag the last section
+          if (i == pageData.sections.length - 1){
+            pageData.sections[i].lastItem = true;
+          }
+
+          // If there are subsections
+          if(pageData.sections[i].sections){
+            for(var j = 0; j < pageData.sections[i].sections.length; j++){
+              // Number each subsection
+              pageData.sections[i].sections[j].number2 = j + 1;
+            }    
+          }  
+        }  
+
+        // If 1st section has subsections, assume they all do and
+        // set flag so we can display the check page correctly
+        if(pageData.sections[0].sections){
+          pageData.subsections = true;
+        }  
+
+      }
+
 
       // Get the service-level data for the page
       pageData.service = data.service;
@@ -88,6 +115,7 @@ module.exports = {
   app.get('/', function (req, res) {
     res.render('index', services);
   });
+
 
 
   // Service summary page

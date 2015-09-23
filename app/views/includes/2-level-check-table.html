@@ -1,0 +1,41 @@
+{{#sections}}
+<thead>
+	<tr>
+		<th class="section-name {{ status }}" colspan="2">				
+			<h2>
+				{{#numbered}}
+				{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}
+				{{/numbered}}
+
+			{{ name }}
+			<h2>
+		</th>
+		<th class="edit-link">
+			{{#page}}
+			<a href="./{{ number }}/question-page?editing=true" class="">
+				Edit
+			</a>
+			{{/page}}
+		</th>
+	</tr>
+</thead>
+<tbody>
+	{{#sections}}
+	<tr>
+		<td class="question">
+			{{ name }}
+		</td>
+		<td class="answer">
+			{{{ value }}}
+		</td>
+		<td class="edit-link">
+			{{#page}}
+			<a href="./{{ number }}/{{ number2 }}/question-page?editing=true">
+				Edit
+			</a>
+			{{/page}}
+		</td>
+	</tr>
+	{{/sections}}
+</tbody>
+{{/sections}}

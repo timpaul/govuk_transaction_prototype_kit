@@ -12,6 +12,7 @@
 		  ] 	
 	  },
 	  "name": "Apply for Personal Independence Payment",
+	  "page": true,
 	  "sections": [
 	    { 
 	    	"name":"About you",

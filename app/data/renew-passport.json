@@ -16,79 +16,66 @@
 	    	"sections": [
 	    		{
 	    			"name": "Existing passport",
-	    			"number": 1,
 	    			"value": "23463457458",
 	    			"page": false
 	    		},
 	    		{
 	    			"name": "Expires",
-	    			"number": 2,
 	    			"value": "22 May 2014",
 	    			"page": false
 	    		},
 	    		{
 	    			"name": "Full name",
-	    			"number": 3,
 	    			"value": "Jack Jones",
 	    			"page": false
 	    		},
 	    		{
 	    			"name": "Gender",
-	    			"number": 4,
 	    			"value": "Male",
 	    			"page": false
 	    		},
 	    		{
 	    			"name": "Date of birth",
-	    			"number": 5,
 	    			"value": "27 October 1978",
 	    			"page": false
 	    		},
 	    		{
 	    			"name": "Place of birth",
-	    			"number": 6,
 	    			"value": "Brighton, UK",
 	    			"page": false
 	    		},
 	    		{
 	    			"name": "Passport photo",
-	    			"number": 7,
 	    			"value": "<img src='/public/images/passport-photo.png' />",
 	    			"page": false
 	    		},
 	    		{
 	    			"name": "Contact details",
-	    			"number": 8,
 	    			"value": "<p>52 Festive Road <br/> London <br/> SW9 4LE </p><p>jack.jones@gmail.com</p><p>Tel: 07729 458234</p>",
 	    			"page": true
 	    		},
 	    		{
 	    			"name": "Send progress updates",
-	    			"number": 9,
 	    			"value": "By email and text message",
 	    			"page": true
 	    		},
 	    		{
 	    			"name": "Service",
-	    			"number": 10,
 	    			"value": "3 week service",
 	    			"page": true
 	    		},
 	    		{
 	    			"name": "New passport delivery address",
-	    			"number": 11,
 	    			"value": "Your new passport will be sent by secure delivery to your <strong>home address</strong>",
 	    			"page": true
 	    		},
 	    		{
 	    			"name": "Passport size",
-	    			"number": 12,
 	    			"value": "You don't require a braille sticker",
 	    			"page": true
 	    		},
 	    		{
 	    			"name": "Total cost",
-	    			"number": 13,
 	    			"value": "<strong>£85.50</strong>",
 	    			"page": true
 	    		}

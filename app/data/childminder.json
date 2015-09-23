@@ -1,7 +1,16 @@
-{
-	  "serviceName": "Become a childminder",
-	  "noun": "checklist",
-	  "parts": 4,
+{	  "service":{
+		  "type": "checklist",
+		  "parts": 4,
+		  "actions": [
+		  	{
+		  		"action": "Print"
+		   	},
+		  	{
+		  		"action": "Cancel"
+		   	}
+		  ] 	
+	  },
+	  "name": "Become a childminder",
 	  "actions": [
 	  	{
 	  		"action": "Print"
@@ -20,11 +29,10 @@
 	  "sections": [
 	    { 
 	    	"name" : "Get training",
-	    	"number": 1,
 	    	"status" : "complete",
 	    	"statusMessage" : "Completed",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -34,11 +42,10 @@
 	    },
 	    { 
 	    	"name" : "Get a CRB check",
-	    	"number": 2,
 	    	"status" : "complete",
 	    	"statusMessage" : "Completed",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -48,10 +55,9 @@
 	    },
 	    { 
 	    	"name" : "Get a health check",
-	    	"number": 3,
 	    	"status" : "incomplete",
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
@@ -61,10 +67,10 @@
 	    },
 	    { 
 	    	"name" : "Early years registration",
-	    	"number": 4,
 	    	"status" : "incomplete",
+	    	"locked" : true,
 	    	"page": true,
-	    	"questions": [
+	    	"sections": [
 	    		{
 	    			"name": "Name",
 	    			"value": "Value",
