@@ -156,3 +156,9 @@
   margin-top: 0;
 }
 
+// Bigger buttons
+.button-medium {
+  @include bold-24;
+  //padding: em(7) em(41) em(4) em(16);
+}
+

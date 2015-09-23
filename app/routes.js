@@ -117,13 +117,21 @@ module.exports = {
   });
 
 
+  // Service index page
 
-  // Service summary page
+  app.get("/service/:service/", function (req, res, next) {
+    var service = req.params.service;
+    renderPage(service, "", "start", function(error, data){
+      return res.render('transaction-pages/start-page', data);
+    })
+  });
+
+
+  // Service pages
 
   app.get("/service/:service/:page-page", function (req, res, next) {
     var service = req.params.service;
     var page = req.params.page;
-
     renderPage(service, "", page, function(error, data){
       return res.render('transaction-pages/' + page + '-page', data);
     })

@@ -25,12 +25,14 @@
 		  ]	
 	  },
 	  "name": "Apply for a vehicle operator's licence",
+	  "description": "[Description of service goes here]",
+	  "startUrl": "./summary-page",
 	  "sections": [
 	    { 
 	    	"name" : "Type of licence",
 	    	"status" : "complete",
 	    	"statusMessage" : "Completed",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -43,7 +45,7 @@
 	    	"name" : "Business details",
 	    	"status" : "complete",
 	    	"statusMessage" : "Completed",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -55,7 +57,7 @@
 	    { 
 	    	"name" : "Addresses",
 	    	"status" : "incomplete",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -67,7 +69,7 @@
 	    { 
 	    	"name" : "People",
 	    	"status" : "incomplete",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -79,7 +81,7 @@
 	    { 
 	    	"name" : "Operating centres",
 	    	"status" : "incomplete",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -91,7 +93,7 @@
 	    { 
 	    	"name" : "Financial evidence",
 	    	"status" : "not-started",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -103,7 +105,7 @@
 	    { 
 	    	"name" : "Transport managers",
 	    	"status" : "not-started",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -115,7 +117,7 @@
 	    { 
 	    	"name" : "Vehicles",
 	    	"status" : "not-started",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -127,7 +129,7 @@
 	    { 
 	    	"name" : "Safety information",
 	    	"status" : "not-started",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -139,7 +141,7 @@
 	    { 
 	    	"name" : "Financial history",
 	    	"status" : "not-started",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -151,7 +153,7 @@
 	    { 
 	    	"name" : "Licence history",
 	    	"status" : "not-started",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",
@@ -163,7 +165,7 @@
 	    { 
 	    	"name" : "Convictions and penalties",
 	    	"status" : "not-started",
-	    	"page": true,
+	    	"page": false,
 	    	"sections": [
 	    		{
 	    			"name": "Name",

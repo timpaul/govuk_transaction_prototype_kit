@@ -11,21 +11,8 @@
 		  ] 	
 	  },
 	  "name": "Become a childminder",
-	  "actions": [
-	  	{
-	  		"action": "Print"
-	   	}
-	  ],
-	  "meta": [
-	  	{
-	  		"name": "Started on",
-	   		"value" : "14 September 2014"
-	   	},
-	  	{
-	  		"name": "Status",
-	   		"value" : "2 of 4 sections completed"
-	   	}
-	  ],
+	  "description": "[Description of service goes here]",
+	  "startUrl": "./summary-page",
 	  "sections": [
 	    { 
 	    	"name" : "Get training",

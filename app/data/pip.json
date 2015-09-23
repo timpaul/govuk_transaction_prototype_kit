@@ -12,6 +12,8 @@
 		  ] 	
 	  },
 	  "name": "Apply for Personal Independence Payment",
+	  "description": "[Description of service goes here]",
+	  "startUrl": "./summary-page",
 	  "page": true,
 	  "sections": [
 	    { 

@@ -9,6 +9,8 @@
 	<div class="grid-row">
 	  <div class="column-three-quarters">
 
+	  	<a href="../{{ prev }}/question-page" class="link-back">Back</a>
+
 	   	<h1 class="heading-large">
 	   		<span class="heading-secondary">
 	   		{{#service.path}}
@@ -39,17 +41,14 @@
 			</table>
 		</div>
 
-		{{^lastItem}}
-			<div class="form-group">
-	   			<a href="../{{ next }}/1/question-page" class="button">These details are correct</a>
-   			</div>
-		{{/lastItem}}
 
-   		{{#lastItem}}
-			<div class="form-group">
-   				<a href="../summary-page" class="button">Check your answers</a>
-   			</div>
-		{{/lastItem}}
+		<h2 class="heading-large">Now submit your {{ service.type }}</h2>
+
+		<p class="lede">By submitting this {{ service.type }} you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+		<div class="form-group">
+   			<a href="confirm-page" class="button button-medium">I understand</a>
+		</div>
 
 
 
