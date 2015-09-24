@@ -1,7 +1,7 @@
 {{<layout}}
 
 {{$pageTitle}}
-	GOV.UK prototyping kit
+	GOV.UK transaction prototyping kit
 {{/pageTitle}}
 
 {{$content}}
@@ -9,14 +9,20 @@
 <main id="content" role="main">
 
 
-<h1 class="heading-large">Transaction prototypes</h1>
+<h1 class="heading-large">Transaction patterns</h1>
+
+<p class="text">We took 9 different transactions on GOV.UK and imagined what they'd be like if they all used the same underlying page formats. The results are below.</p>
+
+<p class="text">Disclaimer: the individual question pages only have dummy content on them. What we're really interested in is the relationship between the summary page, question pages and check your answer pages.</p>
 
 
-<ol class="list-number">
+<h2 class="heading-medium">The transactions</h2>
+
+<ul class="list-bullet">
 	{{#services}}
 	<li><a href="/service/{{ url }}/">{{ name }}</a></li>
 	{{/services}}
-</ol>
+</ul>
 
 
 </main>

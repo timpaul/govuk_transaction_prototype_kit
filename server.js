@@ -40,26 +40,28 @@ app.use(function (req, res, next) {
 });
 
 
-// routes (found in app/routes.js)
 
-routes.bind(app);
 
 // auto render any view that exists
 
-app.get(/^\/([^.]+)$/, function (req, res) {
+app.get(/^\/([^.]+)$/, function (req, res, next) {
 
 	var path = (req.params[0]);
 
 	res.render(path, function(err, html) {
 		if (err) {
-			console.log(err);
-			res.send(404);
+			next();
 		} else {
 			res.end(html);
 		}
 	});
 
 });
+
+// if it doesn't exist, pass the request on to app/routes.js
+
+routes.bind(app);
+
 
 // start the app
 
