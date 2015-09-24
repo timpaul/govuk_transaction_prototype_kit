@@ -133,7 +133,12 @@ module.exports = {
     var service = req.params.service;
     var page = req.params.page;
     renderPage(service, "", page, function(error, data){
+
+
       return res.render('transaction-pages/' + page + '-page', data);
+
+
+
     })
   });
 

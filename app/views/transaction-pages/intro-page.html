@@ -1,0 +1,63 @@
+{{<layout}}
+
+{{$pageTitle}}Intro page{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+	  <div class="column-three-quarters">
+
+	   	<h1 class="heading-large">
+	   		<span class="heading-secondary">
+	   			Section {{ number }}
+	   		</span>
+	   		{{ name }}
+	   	</h1>
+
+	   	{{{ description }}}
+
+
+	   	<details>
+	   		<summary>What's in this section?</summary>
+	   		<p>In this section you'll be asked about:</p>
+	   		<ol class="list-bullet">
+	   			{{#sections}}
+	   			<li>{{ name }}</li>
+	   			{{/sections}}
+	   		</ol>
+	   	</details>
+
+	   	<br>
+
+	   	<div class="form-group">
+	   		<a href="./1/question-page" class="button">Start this section</a>
+	   	</div>
+
+	  </div>
+	  <div class="column-quarter">
+	 
+	   	<ul class="actions">
+	   		{{# service.actions }}
+	   		<li class="action"><a href="">{{ action }} this {{ service.type }}</a></li>
+	   		{{/ service.actions }}
+	   	</ul>
+
+	   	<div class="meta-data">
+	   		{{# service.meta }}
+	   		<p class="last-edited font-xsmall">{{ name }}<br>
+	   			<span class="bold-xsmall">{{ value }}</span>
+	   		</p>
+	   		{{/ service.meta }}
+	   	</div>
+
+	  </div>
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+

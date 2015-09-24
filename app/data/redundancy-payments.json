@@ -7,6 +7,9 @@
 		   	},
 		  	{
 		  		"action": "Delete"
+		   	},
+		  	{
+		  		"action": "Save"
 		   	}
 		  ] 	
 	  },
@@ -16,7 +19,10 @@
 	  "sections": [
 	    { 
 	    	"name":"Your job details",
+	  		"description": "<p>We need to know about your job and the dates you were employed. The following documents, if you have them, will help you with the questions in this section:</p><ul class='list-bullet'><li>your contract of employment</li><li>recent payslips</li><li>any official letter of redundancy</li><li>any other documents showing your employment details</li></ul>",
 	    	"page": false,
+	    	"status" : "complete",
+	    	"statusMessage" : "Done",
 	    	"sections": [
 	    		{
 	    			"name": "Company",
