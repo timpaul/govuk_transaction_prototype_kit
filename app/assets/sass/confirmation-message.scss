@@ -1,0 +1,17 @@
+// Back link styles - with left pointing arrow
+
+// You can delete this file once the elements are updated to the latest version.
+
+@import 'elements';
+
+.confirmation-message {
+  background-color: #28a197;
+  color: #fff;
+  text-align: center;
+  padding: $gutter;
+  margin: $gutter 0;
+
+  @include media(desktop) {
+
+  }
+}

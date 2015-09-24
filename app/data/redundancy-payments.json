@@ -11,15 +11,20 @@
 		  ] 	
 	  },
 	  "name": "Claim redundancy payments",
+	  "description": "[Description of service goes here]",
+	  "startUrl": "./summary-page",
 	  "sections": [
 	    { 
-	    	"name":"The job from which you were made redundant",
-	    	"number": 1,
+	    	"name":"Your job details",
 	    	"page": false,
 	    	"sections": [
 	    		{
+	    			"name": "Company",
+	    			"value": "Digital Testing Limited"
+	    		},
+	    		{
 	    			"name": "Job title",
-	    			"value": "Manager",
+	    			"value": "Cleaner",
 	    			"page": true
 	    		},
 	    		{
@@ -44,7 +49,7 @@
 	    		},
 	    		{
 	    			"name": "Was this you official end date?",
-	    			"value": "No",
+	    			"value": "Yes",
 	    			"page": true
 	    		},
 	    		{
@@ -55,6 +60,186 @@
 	    		{
 	    			"name": "Claiming compensation for loss of notice?",
 	    			"value": "Yes",
+	    			"page": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Your wage and working hours",
+	    	"page": false,
+	    	"sections": [
+	    		{
+	    			"name": "Gross income",
+	    			"value": "£100.00 per day"
+	    		},
+	    		{
+	    			"name": "Paid weekly",
+	    			"value": "No",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Bonus or commission",
+	    			"value": "£10 per customer",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Contracted hours",
+	    			"value": "20 hours per week",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Paid overtime",
+	    			"value": "Yes",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Normal overtime",
+	    			"value": "10 hours per week",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Days a week normally worked",
+	    			"value": "Tuesday, Wednesday, Thursday",
+	    			"page": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Your redundancy claim",
+	    	"page": false,
+	    	"sections": [
+	    		{
+	    			"name": "Claiming for redundancy pay?",
+	    			"value": "Yes"
+	    		},
+	    		{
+	    			"name": "When did you write to your employer or an Employment Tribunal about the redundancy pay you were owed?",
+	    			"value": "",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Redundancy payment received from Digital Testing Two Limited?",
+	    			"value": "Yes, £100",
+	    			"page": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Annual leave",
+	    	"page": false,
+	    	"sections": [
+	    		{
+	    			"name": "Are you owed any holiday pay?",
+	    			"value": "Yes"
+	    		},
+	    		{
+	    			"name": "Start date of your holiday year",
+	    			"value": "1 April 2014",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "How many days holiday per year, including bank holidays, were you entitled to?",
+	    			"value": "10",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "How many untaken holiday days have you carried forward to this holiday year?",
+	    			"value": "2",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "How many holiday days have you taken this holiday year, including bank holidays?",
+	    			"value": "15",
+	    			"page": true
+	    		}
+	    	]
+	    },
+	    { 
+	    	"name":"Wages owed",
+	    	"page": false,
+	    	"sections": [
+	    		{
+	    			"name": "Are you owed any money?",
+	    			"value": "Yes"
+	    		},
+	    		{
+	    			"name": "Did your wages have any compulsory deductions, excluding National Insurance and income tax?",
+	    			"value": "No",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "01 October 2014 to 01 November 2014",
+	    			"page": true,
+					"sections": [
+			    		{
+			    			"name": "Did your employer attempt to pay you?",
+			    			"value": "Yes"
+			    		},
+			    		{
+			    			"name": "What is the gross amount of pay owed for this period?",
+			    			"value": "£1000.00"
+			    		},
+			    		{
+			    			"name": "Number of unpaid days worked",
+			    			"value": "5"
+			    		}
+	    			]
+	    		}
+	    	]
+	    },
+	  	{ 
+	    	"name":"Your new employment", 
+	    	"page": false,
+	    	"sections": [
+	    		{
+	    			"name": "Did you have any breaks in employment including redundancy or unemployment, and excluding sick leave, maternity or paternity leave?",
+	    			"value": "Yes", 
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Did you have any periods of being on strike?",
+	    			"value": "Yes", 
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Did you have any period of working abroad for this employer while not paying UK National Insurance contributions?",
+	    			"value": "Yes", 
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "1 Jan 2010 to 1 Jan 2011",
+	    			"value": "Non-statutory maternity leave", 
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "26 Oct 2012 to 27 Oct 2012",
+	    			"value": "Strike", 
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "1 Jan 2013 to 1 Apr 2013",
+	    			"value": "Abroad", 
+	    			"page": true
+	    		}
+	    	]
+	    },
+	  	{ 
+	    	"name":"Other details", 
+	    	"page": false,
+	    	"sections": [
+	    		{
+	    			"name": "Have you been awarded any payments in relation to your job ending by an Employment tribunal?",
+	    			"value": "No", 
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Do you owe Digital Testing Limited any money?",
+	    			"value": "No", 
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Is there anything else you wish to tell us about your claim?",
+	    			"value": "No", 
 	    			"page": true
 	    		}
 	    	]
