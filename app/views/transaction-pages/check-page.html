@@ -42,13 +42,39 @@
 		</div>
 
 
-		<h2 class="heading-large">Now submit your {{ service.type }}</h2>
 
-		<p class="lede">By submitting this {{ service.type }} you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+		{{#lastItem}}
+
+		<h2 class="heading-medium">Now submit your {{ service.type }}</h2>
+
+		<p>By submitting this {{ service.type }} you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
 
 		<div class="form-group">
-   			<a href="confirm-page" class="button button-medium">I understand</a>
+   			<a href="confirm-page" class="button">I understand</a>
 		</div>
+
+		{{/lastItem}}
+
+		{{#lastItem2}}
+
+		<h2 class="heading-medium">Now submit your {{ service.type }}</h2>
+
+		<p>By submitting this {{ service.type }} you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+		<div class="form-group">
+   			<a href="confirm-page" class="button">I understand</a>
+		</div>
+
+		{{/lastItem2}}
+
+		{{^lastItem}}
+		{{^lastItem2}}
+			<div class="form-group">
+	   			<a href="../{{ next }}/1/question-page" class="button">Next section</a>
+			</div>
+		{{/lastItem2}}
+		{{/lastItem}}
 
 
 

@@ -50,6 +50,8 @@ module.exports = {
           pageData.lastItem = lastItem;
 
         }
+      } else {
+        pageData.lastItem2 = true;
       }
 
 
@@ -71,6 +73,8 @@ module.exports = {
           // Flag the last section
           if (i == pageData.sections.length - 1){
             pageData.sections[i].lastItem = true;
+          } else {
+            pageData.sections[i].lastItem = false; 
           }
 
           // If there are subsections
