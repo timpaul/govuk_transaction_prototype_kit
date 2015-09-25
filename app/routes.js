@@ -21,20 +21,18 @@ module.exports = {
 
 
   // Render a page
-  var renderPage = function(service, section, page, callback){
-
+  var renderPage = function(service, sectionArray, page, callback){
 
       // Read the data file for the relevant service
       var data = JSON.parse(fs.readFileSync('app/data/' + service + '.json', 'utf8'));
 
-
       // Get the section-level data for the page
       var pageData = data;
-      sectionArray = section.split('/');
-
 
       // Find the relevant section in the service
-      if (sectionArray != ""){
+      if (sectionArray.length == 0){
+        pageData.lastItem2 = true;
+      } else {
         for(var i = 0; i < sectionArray.length; i++){
 
           sectionIndex = Number(sectionArray[i]) - 1;
@@ -50,10 +48,7 @@ module.exports = {
           pageData.lastItem = lastItem;
 
         }
-      } else {
-        pageData.lastItem2 = true;
       }
-
 
       // Number the current, previous and next pages
       var currentSection = Number(sectionArray[sectionArray.length - 1]);
@@ -100,11 +95,11 @@ module.exports = {
 
 
       // Don't show the service name in the header at the top level
-      if(section == ""){
+      if(sectionArray.length == 0){
         pageData.service.name = "";
       } else {
         pageData.service.name = data.name;
-        pageData.service.section = section.replace("/", ".");
+        pageData.service.section = sectionArray.join(".");
       }
 
       return callback(null, pageData);
@@ -117,6 +112,8 @@ module.exports = {
 	// Index page
 
   app.get('/', function (req, res) {
+
+    console.log("index");
     res.render('index', services);
   });
 
@@ -138,10 +135,7 @@ module.exports = {
     var page = req.params.page;
     renderPage(service, "", page, function(error, data){
 
-
       return res.render('transaction-pages/' + page + '-page', data);
-
-
 
     })
   });
@@ -149,16 +143,18 @@ module.exports = {
 
   // Section pages
 
-  app.get("/service/:service/:section*/:subsections-page", function (req, res, next) {
+  app.get("/service/:service/:section/*-page", function (req, res, next) {
     var service = req.params.service;
-    var section = req.params.section;
-    var subsections = req.params.subsections;
-    var page = req.params[1];
+    var sections = [req.params.section];
 
-    // Add subsections if there are any
-    if(subsections){ section = section + subsections };
+    var path = req.params[0].split("/");
+    var page = path.pop();
+    sections = sections.concat(path);
 
-    renderPage(service, section, page, function(error, data){
+    console.log(page);
+    console.log(sections);
+
+    renderPage(service, sections, page, function(error, data){
       return res.render('transaction-pages/' + page + '-page', data);
     })
 
