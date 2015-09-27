@@ -26,57 +26,6 @@
 
 	   	<p>Please check all the information you have provided below.</p>
 
- 
-		<div class="summary">
-			<table class="summary-table">
-
-			{{#subsections}}
-				{{>includes/2-level-check-table}}
-	   		{{/subsections}}
-
-	   		{{^subsections}}
-				{{>includes/1-level-check-table}}
-	   		{{/subsections}}
-
-			</table>
-		</div>
-
-
-
-
-		{{#lastItem}}
-
-		<h2 class="heading-medium">Now submit your {{ service.type }}</h2>
-
-		<p>By submitting this {{ service.type }} you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-
-		<div class="form-group">
-   			<a href="confirm-page" class="button">I understand</a>
-		</div>
-
-		{{/lastItem}}
-
-		{{#lastItem2}}
-
-		<h2 class="heading-medium">Now submit your {{ service.type }}</h2>
-
-		<p>By submitting this {{ service.type }} you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-
-		<div class="form-group">
-   			<a href="confirm-page" class="button">I understand</a>
-		</div>
-
-		{{/lastItem2}}
-
-		{{^lastItem}}
-		{{^lastItem2}}
-			<div class="form-group">
-	   			<a href="../{{ next }}/1/question-page" class="button">Next section</a>
-			</div>
-		{{/lastItem2}}
-		{{/lastItem}}
-
-
 
 	  </div>
 	  <div class="column-quarter">
@@ -97,6 +46,55 @@
 
 		</div>
 	</div>
+
+
+	<table class="table-check-answers">
+
+	{{#subsections}}
+	{{>includes/2-level-check-table}}
+	{{/subsections}}
+
+	{{^subsections}}
+	{{>includes/1-level-check-table}}
+	{{/subsections}}
+
+	</table>
+
+
+	{{#lastItem}}
+
+
+	<h2 class="heading-medium">Now submit your {{ service.type }}</h2>
+
+	<p>By submitting this {{ service.type }} you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+	<div class="form-group">
+			<a href="confirm-page" class="button">I understand</a>
+	</div>
+
+	{{/lastItem}}
+
+	{{#lastItem2}}
+
+	<h2 class="heading-medium">Now submit your {{ service.type }}</h2>
+
+	<p class="text">By submitting this {{ service.type }} you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+	<div class="form-group">
+			<a href="confirm-page" class="button">I understand</a>
+	</div>
+
+	{{/lastItem2}}
+
+	{{^lastItem}}
+	{{^lastItem2}}
+		<div class="form-group">
+   			<a href="../{{ next }}/1/question-page" class="button">Next section</a>
+		</div>
+	{{/lastItem2}}
+	{{/lastItem}}
+
+
 
 </main>
 

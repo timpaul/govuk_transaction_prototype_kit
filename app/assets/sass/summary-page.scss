@@ -2,41 +2,6 @@
 
 @import 'elements';
 
-.actions,
-.meta-data{
-  margin-bottom: 20px;
-}
-
-.actions{
-  margin-top: 45px;
-  margin-bottom: 15px;
-  a{
-    font-weight: bold;
-    text-decoration: none;
-    &:hover{
-      text-decoration: underline;
-    }
-    @extend .no-visited-style;
-  }
-  .action{
-    margin-bottom: 5px;
-  }
-}
-
-.meta-data{
-  dt{
-    @include core-16;
-  }
-  dd{
-    @include bold-19();
-    margin-bottom: $gutter/2;
-  }
-  .last-editor{
-    display: block;
-    @include core-16;  
-  }
-}
-
 .summary-table{
   margin-top: $gutter;
   td{
@@ -150,10 +115,6 @@
       color: $secondary-text-colour;
     }
   }
-}
-
-.link-back + h1 {
-  margin-top: 0;
 }
 
 // Bigger buttons

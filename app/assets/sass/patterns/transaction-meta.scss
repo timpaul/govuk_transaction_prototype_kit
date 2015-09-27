@@ -1,0 +1,19 @@
+@import '../elements';
+
+// Transaction meta data
+//
+// Eg. 'Started on', 'Last edited by', '3 of 12 sections completed'...
+
+.meta-data{
+  dt{
+    @include core-16;
+  }
+  dd{
+    @include bold-19();
+    margin-bottom: $gutter/2;
+  }
+  .last-editor{
+    display: block;
+    @include core-16;  
+  }
+}

@@ -1,0 +1,63 @@
+@import '../elements';
+
+// Summary table
+//
+
+
+.overview{
+  .summary-table {
+    border-top: 1px solid $border-colour;
+    thead th{
+      padding: 15px 0 10px 0;
+    }
+    .section-number{
+      width: $gutter;
+    }
+    .section-status{
+      text-align: right;
+    }
+    .section-name.locked{
+      color: $secondary-text-colour;
+    }
+  }
+}
+
+.table-summary{
+  margin: 0 0 $gutter 0;
+  border-top: 1px solid $border-colour;
+
+  th{
+    padding: 15px 0 10px 0;
+  }
+
+  .section-number{
+    width: $gutter;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .section-name{
+    h2{
+      @include bold-24();
+      a{
+        @extend .no-underline;
+        @extend .no-visited-style;
+      } 
+    }
+    &.locked{
+      color: $secondary-text-colour;
+    }
+  }
+
+  .section-status{
+    text-align: right;
+    .status{  
+      display: block;
+      padding-top: 5px;
+      margin-top: -5px;
+      float: right;
+    }
+  }
+
+}

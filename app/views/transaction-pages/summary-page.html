@@ -25,48 +25,46 @@
 	   	<p>Complete the {{ parts }} sections below.</p>
 
  
-		<div class="summary overview">
-			<table class="summary-table">
-				{{#sections}}
-				<thead>
-					<tr>
-						<th class="section-name {{ status }}">
-							<h2>
-								{{^locked}}
+		<table class="table-summary">
+			{{#sections}}
+			<thead>
+				<tr>
+					<th class="section-name {{ status }}">
+						<h2>
+							{{^locked}}
 
-								{{^page}}
-								<a href="{{ number }}/1/question-page">
-								{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
-								</a>
-								{{/page}}
+							{{^page}}
+							<a href="{{ number }}/1/question-page">
+							{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+							</a>
+							{{/page}}
 
-								{{#page}}
-								<a href="{{ number }}/question-page">
-								{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
-								</a>
-								{{/page}}
-
-
-								{{/locked}}
+							{{#page}}
+							<a href="{{ number }}/question-page">
+							{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+							</a>
+							{{/page}}
 
 
-								{{#locked}}
-									<span class="locked" title="You can't complete this item right now">
-								{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }} (locked)
-									</span>
-								{{/locked}}
-							</h2>
-						</th>
-						<th class="section-status">
-							{{#statusMessage }}
-							<span class="status {{ status }}">{{ statusMessage }}</span>
-							{{/statusMessage }}
-						</th>
-					</tr>
-				</thead>
-			   	{{/sections}}
-			</table>
-		</div>
+							{{/locked}}
+
+
+							{{#locked}}
+								<span class="locked" title="You can't complete this item right now">
+							{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }} (locked)
+								</span>
+							{{/locked}}
+						</h2>
+					</th>
+					<th class="section-status">
+						{{#statusMessage }}
+						<span class="status {{ status }}">{{ statusMessage }}</span>
+						{{/statusMessage }}
+					</th>
+				</tr>
+			</thead>
+		   	{{/sections}}
+		</table>
 
 
 	  </div>

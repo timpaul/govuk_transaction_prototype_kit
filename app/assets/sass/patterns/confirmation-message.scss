@@ -1,0 +1,9 @@
+@import '../elements';
+
+.confirmation-message {
+  background-color: #28a197;
+  color: #fff;
+  text-align: center;
+  padding: $gutter;
+  margin: $gutter 0;
+}

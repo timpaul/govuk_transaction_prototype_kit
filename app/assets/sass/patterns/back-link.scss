@@ -2,7 +2,7 @@
 
 // You can delete this file once the elements are updated to the latest version.
 
-@import 'elements';
+@import '../elements';
 
 .link-back {
   @include inline-block;
@@ -59,4 +59,9 @@
    background: file-url("icon-arrow-left.png") no-repeat 0 4px;
   }
 
+}
+
+
+.link-back + h1 {
+  margin-top: 0;
 }

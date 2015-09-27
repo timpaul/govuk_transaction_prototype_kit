@@ -1,7 +1,6 @@
-{
+{	  
 	"service":{
 		  "type": "application",
-		  "parts": 6,
 		  "actions": [
 		  	{
 		  		"action": "Print"
@@ -11,114 +10,114 @@
 		   	}
 		  ] 	
 	  },
-	  "name": "Apply for an apprenticeship",
-	  "description": "[Description of service goes here]",
-	  "startUrl": "./1/question-page",
-	  "sections": [
-	    { 
-	    	"name":"Education", 
-	    	"page": true,
-	    	"sections": [
-	    		{
-	    			"name": "Name of most recent school or college",
-	    			"value": "St Bernards School",
-	    			"page": false
-	    		},
-	    		{
-	    			"name": "Years attended",
-	    			"value": "2008 - 2011",
-	    			"page": false
-	    		}
-	    	]
-	    },
-	    { 
-	    	"name":"Qualifications", 
-	    	"page": true,
-	    	"sections": [
-	    		{
-	    			"name": "GCSE Maths",
-	    			"value": "<span class='tab'>Grade A</span><span class='tab'>2011</span>",
-	    			"page": false
-	    		},
-	    		{
-	    			"name": "GCSE English",
-	    			"value": "<span class='tab'>Grade B</span><span class='tab'>2011</span>",
-	    			"page": false
-	    		},
-	    		{
-	    			"name": "GCSE Science",
-	    			"value": "<span class='tab'>Grade BB</span><span class='tab'>2011</span>",
-	    			"page": false
-	    		},
-	    		{
-	    			"name": "GCSE Geography",
-	    			"value": "<span class='tab'>Grade C</span><span class='tab'>2011</span>",
-	    			"page": false
-	    		}
-	    	]
-	    },
-	    { 
-	    	"name":"Work experience", 
-	    	"page": true,
-	    	"sections": [
-	    		{
-	    			"name": "Dec 2013 - Current",
-	    			"value": "Superdrug <br> Customer service <br> Helping customers at the checkout",
-	    			"page": false
-	    		},
-	    		{
-    				"name": "May 2012 - Sep 2013",
-	    			"value": "Boots <br> Customer service <br> Helping customers at the checkout",
-	    			"page": false
-	    		}
-	    	]
-	    },
-	    { 
-	    	"name":"About you", 
-	    	"page": true,
-	    	"sections": [
-	    		{
-	    			"name": "Examples of your strengths",
-	    			"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas imperdiet turpis. Nunc vitae tellus eu nisl dictum malesuada. Praesent laoreet justo eu suscipit blandit.",
-	    			"page": false
-	    		},
-	    		{
-	    			"name": "Skills you would like to improve",
-	    			"value": "In vitae ornare quam, eget hendrerit nulla. Vestibulum euismod finibus risus, ac rutrum tortor gravida tincidunt. Nunc interdum, nibh et aliquet ultricies, urna sapien dapibus nisi, a finibus ipsum lectus eu sapien.",
-	    			"page": false
-	    		},
-	    		{
-	    			"name": "Hobbies and interests",
-	    			"value": "Proin vel turpis a velit efficitur tempor. Integer a blandit felis, condimentum bibendum arcu. Cras tristique erat id tellus molestie dignissim. Phasellus non augue vehicula, laoreet neque vitae, maximus nulla. Donec faucibus bibendum lobortis. Morbi eget lacinia leo.",
-	    			"page": false
-	    		}
-	    	]
-	    },
-	    { 
-	    	"name":"Additional questions", 
-	    	"page": true,
-	    	"sections": [
-	    		{
-	    			"name": "Why would you like to become an apprentice?",
-	    			"value": "To enable me to attain the skills I need to become employable",
-	    			"page": false
-	    		},
-	    		{
-	    			"name": "Where do you see yourself in 3 years?",
-	    			"value": "I hope to grow into a manager",
-	    			"page": false
-	    		},
-	    		{
-	    			"name": "Do you have a learning difficulty, disability or health problem?",
-	    			"value": "I am deaf",
-	    			"page": false
-	    		},
-	    		{
-	    			"name": "Is there anything we can do to support your interview?",
-	    			"value": "I need a signer",
-	    			"page": false
-	    		}
-	    	]
-	    }
-	  ]
-	}
+  "name": "Apply for an apprenticeship",
+  "description": "Apprenticeships combine practical training in a job with study. Use this service to find and apply for apprenticeships in England.",
+  "startUrl": "./1/question-page",
+  "sections": [
+    { 
+    	"name":"Education", 
+    	"page": true,
+    	"sections": [
+    		{
+    			"name": "Name of most recent school or college",
+    			"value": "St Bernards School",
+    			"page": false
+    		},
+    		{
+    			"name": "Years attended",
+    			"value": "2008 - 2011",
+    			"page": false
+    		}
+    	]
+    },
+    { 
+    	"name":"Qualifications", 
+    	"page": true,
+    	"sections": [
+    		{
+    			"name": "GCSE Maths",
+    			"value": "<span class='tab'>Grade A</span><span class='tab'>2011</span>",
+    			"page": false
+    		},
+    		{
+    			"name": "GCSE English",
+    			"value": "<span class='tab'>Grade B</span><span class='tab'>2011</span>",
+    			"page": false
+    		},
+    		{
+    			"name": "GCSE Science",
+    			"value": "<span class='tab'>Grade BB</span><span class='tab'>2011</span>",
+    			"page": false
+    		},
+    		{
+    			"name": "GCSE Geography",
+    			"value": "<span class='tab'>Grade C</span><span class='tab'>2011</span>",
+    			"page": false
+    		}
+    	]
+    },
+    { 
+    	"name":"Work experience", 
+    	"page": true,
+    	"sections": [
+    		{
+    			"name": "Dec 2013 - Current",
+    			"value": "Superdrug <br> Customer service <br> Helping customers at the checkout",
+    			"page": false
+    		},
+    		{
+  				"name": "May 2012 - Sep 2013",
+    			"value": "Boots <br> Customer service <br> Helping customers at the checkout",
+    			"page": false
+    		}
+    	]
+    },
+    { 
+    	"name":"About you", 
+    	"page": true,
+    	"sections": [
+    		{
+    			"name": "Examples of your strengths",
+    			"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas imperdiet turpis. Nunc vitae tellus eu nisl dictum malesuada. Praesent laoreet justo eu suscipit blandit.",
+    			"page": false
+    		},
+    		{
+    			"name": "Skills you would like to improve",
+    			"value": "In vitae ornare quam, eget hendrerit nulla. Vestibulum euismod finibus risus, ac rutrum tortor gravida tincidunt. Nunc interdum, nibh et aliquet ultricies, urna sapien dapibus nisi, a finibus ipsum lectus eu sapien.",
+    			"page": false
+    		},
+    		{
+    			"name": "Hobbies and interests",
+    			"value": "Proin vel turpis a velit efficitur tempor. Integer a blandit felis, condimentum bibendum arcu. Cras tristique erat id tellus molestie dignissim. Phasellus non augue vehicula, laoreet neque vitae, maximus nulla. Donec faucibus bibendum lobortis. Morbi eget lacinia leo.",
+    			"page": false
+    		}
+    	]
+    },
+    { 
+    	"name":"Additional questions", 
+    	"page": true,
+    	"sections": [
+    		{
+    			"name": "Why would you like to become an apprentice?",
+    			"value": "To enable me to attain the skills I need to become employable",
+    			"page": false
+    		},
+    		{
+    			"name": "Where do you see yourself in 3 years?",
+    			"value": "I hope to grow into a manager",
+    			"page": false
+    		},
+    		{
+    			"name": "Do you have a learning difficulty, disability or health problem?",
+    			"value": "I am deaf",
+    			"page": false
+    		},
+    		{
+    			"name": "Is there anything we can do to support your interview?",
+    			"value": "I need a signer",
+    			"page": false
+    		}
+    	]
+    }
+  ]
+}

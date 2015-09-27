@@ -1,7 +1,6 @@
 {
 	  "service":{
 		  "type": "application",
-		  "parts": 6,
 		  "actions": [
 		  	{
 		  		"action": "Print"

@@ -23,21 +23,20 @@ module.exports = {
   // Render a page
   var renderPage = function(service, section, page, callback){
 
-
       // Read the data file for the relevant service
       var data = JSON.parse(fs.readFileSync('app/data/' + service + '.json', 'utf8'));
-
 
       // Get the section-level data for the page
       var pageData = data;
       sectionArray = section.split('/');
 
-
-      // Find the relevant section in the service
+      // If the request contains sections
       if (sectionArray != ""){
+
+        // Find the relevant section
         for(var i = 0; i < sectionArray.length; i++){
 
-          sectionIndex = Number(sectionArray[i]) - 1;
+          var sectionIndex = Number(sectionArray[i]) - 1;
 
           // If it's the last section, add a flag so we can 
           // send people on to the next section
@@ -46,8 +45,11 @@ module.exports = {
             lastItem = true;
           }
 
+          var parentSection = pageData.name;
+
           pageData = pageData.sections[sectionIndex];
           pageData.lastItem = lastItem;
+          pageData.parentSection = parentSection;
 
         }
       } else {
