@@ -21,14 +21,14 @@ module.exports = {
 
 
   // Render a page
-  var renderPage = function(service, section, page, callback){
+  var renderPage = function(params, callback){
 
       // Read the data file for the relevant service
-      var data = JSON.parse(fs.readFileSync('app/data/' + service + '.json', 'utf8'));
+      var data = JSON.parse(fs.readFileSync('app/data/' + params.service + '.json', 'utf8'));
 
       // Get the section-level data for the page
       var pageData = data;
-      sectionArray = section.split('/');
+      sectionArray = params.section.split('/');
 
       // If the request contains sections
       if (sectionArray != ""){
@@ -92,7 +92,10 @@ module.exports = {
         // set flag so we can display the check page correctly
         if(pageData.sections[0].sections){
           pageData.subsections = true;
-        }  
+        }
+
+        // Set flag is user is arriving from a 'Change' link
+        pageData.change = params.change;
 
       }
 
@@ -102,11 +105,11 @@ module.exports = {
 
 
       // Don't show the service name in the header at the top level
-      if(section == ""){
+      if(params.section == ""){
         pageData.service.name = "";
       } else {
         pageData.service.name = data.name;
-        pageData.service.section = section.replace("/", ".");
+        pageData.service.section = params.section.replace("/", ".");
       }
 
       return callback(null, pageData);
@@ -126,8 +129,12 @@ module.exports = {
   // Service index page
 
   app.get("/service/:service/", function (req, res, next) {
-    var service = req.params.service;
-    renderPage(service, "", "start", function(error, data){
+    var params = {};
+    params.service = req.params.service;
+    params.section = "";
+    params.page = "start";
+
+    renderPage(params, function(error, data){
       return res.render('transaction-pages/start-page', data);
     })
   });
@@ -136,12 +143,21 @@ module.exports = {
   // Service pages
 
   app.get("/service/:service/:page-page", function (req, res, next) {
-    var service = req.params.service;
-    var page = req.params.page;
-    renderPage(service, "", page, function(error, data){
+    var params = {};
+    params.service = req.params.service;
+    params.section = "";
+    params.page = req.params.page;
 
 
-      return res.render('transaction-pages/' + page + '-page', data);
+    if(req.query.change == "true"){
+      params.change = true;
+    }
+
+
+    renderPage(params, function(error, data){
+
+
+      return res.render('transaction-pages/' + params.page + '-page', data);
 
 
 
@@ -152,16 +168,23 @@ module.exports = {
   // Section pages
 
   app.get("/service/:service/:section*/:subsections-page", function (req, res, next) {
-    var service = req.params.service;
-    var section = req.params.section;
+    
+    var params = {};
+    params.service = req.params.service;
+    params.section = req.params.section;
+    params.page = req.params[1];
+
     var subsections = req.params.subsections;
-    var page = req.params[1];
+
+    if(req.query.change == "true"){
+      params.change = true;
+    }
 
     // Add subsections if there are any
-    if(subsections){ section = section + subsections };
+    if(subsections){ params.section = params.section + subsections };
 
-    renderPage(service, section, page, function(error, data){
-      return res.render('transaction-pages/' + page + '-page', data);
+    renderPage(params, function(error, data){
+      return res.render('transaction-pages/' + params.page + '-page', data);
     })
 
   });

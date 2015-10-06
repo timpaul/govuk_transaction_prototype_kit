@@ -34,9 +34,17 @@
 							{{^locked}}
 
 							{{^page}}
+							{{^hasIntro}}
 							<a href="{{ number }}/1/question-page">
 							{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
 							</a>
+							{{/hasIntro}}
+
+							{{#hasIntro}}
+							<a href="{{ number }}/intro-page">
+							{{#number}}<span class="section-number">{{ number }}.</span>{{/number}}{{ name }}
+							</a>
+							{{/hasIntro}}
 							{{/page}}
 
 							{{#page}}

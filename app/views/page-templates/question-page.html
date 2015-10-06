@@ -1,6 +1,6 @@
 {{<layout}}
 
-{{$pageTitle}}Intro page{{/pageTitle}}
+{{$pageTitle}}Summary page{{/pageTitle}}
 
 {{$content}}
 
@@ -9,38 +9,31 @@
 	<div class="grid-row">
 	  <div class="column-three-quarters">
 
+	  	<a href="{{$backLink}}{{/backLink}}" class="link-back">Back</a>
+
 	   	<h1 class="heading-large">
 	   		<span class="heading-secondary">
-	   			Section {{ number }}
+	   			{{$pageSubTitle}}{{/pageSubTitle}}
 	   		</span>
-	   		{{ name }}
+			{{$pageTitle}}{{/pageTitle}}
 	   	</h1>
 
-	   	<div class="text">
-		   	{{{ description }}}
+
+		<form class="form">
+
+			{{$pageContent}}{{/pageContent}}
+
+			<div class="form-group">
+   				<a href="" class="button">Save and continue</a>
+   			</div>
+
+	   	</form>
 
 
-		   	<details>
-		   		<summary>What's in this section?</summary>
-		   		<p>In this section you'll be asked about:</p>
-		   		<ol class="list-bullet">
-		   			{{#sections}}
-		   			<li>{{ name }}</li>
-		   			{{/sections}}
-		   		</ol>
-		   	</details>
-
-	   	</div>
-
-	   	<br>
-
-	   	<div class="form-group">
-	   		<a href="./1/question-page" class="button">Start this section</a>
-	   	</div>
 
 	  </div>
 	  <div class="column-quarter">
-	 
+
 	   	<ul class="actions">
 	   		{{# service.actions }}
 	   		<li class="action"><a href="">{{ action }} this {{ service.type }}</a></li>
@@ -49,13 +42,13 @@
 
 	   	<div class="meta-data">
 	   		{{# service.meta }}
-	   		<p class="last-edited font-xsmall">{{ name }}<br>
+	   		<p class="font-xsmall">{{ name }}<br>
 	   			<span class="bold-xsmall">{{ value }}</span>
 	   		</p>
 	   		{{/ service.meta }}
 	   	</div>
 
-	  </div>
+		</div>
 	</div>
 
 </main>

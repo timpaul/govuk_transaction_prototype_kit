@@ -16,7 +16,12 @@
 	   			<!--Question {{service.section}}-->
 	   			{{ parentSection }}
 	   		</span>
-	   		{{ name }}
+	   		{{#question}}
+	   			{{ question }}
+	   		{{/question}}
+	   		{{^question}}
+	   			{{ name }}
+	   		{{/question}}
 	   	</h1>
 
 
@@ -25,8 +30,7 @@
 		{{#sections}}
 
 		   	<div class="form-group">
-		   		<label class="form-label">{{ name }}</label>
-		   		<textarea class="form-control"></textarea>
+		   		<p class="placeholder-box">{{ name }}</p>
 		   	</div>
 
 	   	{{/sections}}
@@ -34,17 +38,23 @@
 	   	{{^sections}}
 
 		   	<div class="form-group">
-		   		<label class="form-label">{{ name }}</label>
-		   		<textarea class="form-control"></textarea>
+		   		<p class="placeholder-box">{{ name }}</p>
 		   	</div>
 
 	   	{{/sections}}
 
 
 	   	{{^lastItem}}
+   			{{#change}}
+			<div class="form-group">
+	   			<a href="../check-page" class="button">Save and return</a>
+   			</div>
+   			{{/change}}
+   			{{^change}}
 			<div class="form-group">
 	   			<a href="../{{ next }}/question-page" class="button">Save and continue</a>
    			</div>
+   			{{/change}}
 		{{/lastItem}}
 
    		{{#lastItem}}
@@ -52,6 +62,10 @@
    				<a href="../check-page" class="button">Check your answers</a>
    			</div>
 		{{/lastItem}}
+
+<!--
+   			<p><a href="../../summary-page">Back to summary</a></p>
+   		-->
 
 	   	</form>
 

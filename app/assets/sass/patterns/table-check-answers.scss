@@ -5,19 +5,15 @@
 
 .table-check-answers{
   margin: 0 0 $gutter 0;
-
   th{
     padding-top: 45px;
   }
-
   td{
     vertical-align: top;
-    //@include core-19();
     strong{
       @include bold-16;
     }
   }
-
   .section-number{
     display: inline-block;
     text-align: right;
@@ -43,11 +39,9 @@
       @extend .no-visited-style;    
     }
   }
-
   .question{
     width: 33.33%;
   }
-
   .answer{
     padding-left: 10px;
     .tab{
@@ -55,5 +49,9 @@
       width: 33.33%;
       float: left;
     }
+  }
+  .answer-required{
+    color: $mellow-red;
+    font-weight: bold;
   }
 }

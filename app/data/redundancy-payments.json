@@ -19,22 +19,26 @@
 	  "sections": [
 	    { 
 	    	"name":"Your job details",
-	  		"description": "<p>We need to know about your job and the dates you were employed. The following documents, if you have them, will help you with the questions in this section:</p><ul class='list-bullet'><li>your contract of employment</li><li>recent payslips</li><li>any official letter of redundancy</li><li>any other documents showing your employment details</li></ul>",
+	  		"description": "<p>In this section we need to know about your job and the dates you were employed. The following documents, if you have them, will help you with the questions:</p><ul class='list-bullet'><li>your contract of employment</li><li>recent payslips</li><li>any official letter of redundancy</li><li>any other documents showing your employment details</li></ul>",
 	    	"page": false,
+	    	"hasIntro": true,
 	    	"status" : "complete",
 	    	"statusMessage" : "Done",
 	    	"sections": [
 	    		{
-	    			"name": "Company",
+	    			"name": "Company name",
+	    			"question": "What company did you work for?",
 	    			"value": "Digital Testing Limited"
 	    		},
 	    		{
 	    			"name": "Job title",
+	    			"question": "What was your job title?",
 	    			"value": "Cleaner",
 	    			"page": true
 	    		},
 	    		{
 	    			"name": "Employee, roll or works number",
+	    			"question": "Did you have an employee, roll or works number?",
 	    			"value": "None given",
 	    			"page": true
 	    		},
@@ -45,26 +49,29 @@
 	    		},
 	    		{
 	    			"name": "Start date",
+	    			"question": "On what date did you start your employment?",
 	    			"value": "12 August 1999",
 	    			"page": true
 	    		},
 	    		{
 	    			"name": "Last day worked",
-	    			"value": "15 April 2014",
+	    			"question": "What was the last date you worked there?",
+	    			"value": false,
 	    			"page": true
 	    		},
 	    		{
-	    			"name": "Was this you official end date?",
+	    			"name": "Was this your official end date?",
 	    			"value": "Yes",
 	    			"page": true
 	    		},
 	    		{
 	    			"name": "Notice given by employer",
+	    			"question": "Did your employer give you any formal notice?",
 	    			"value": "None",
 	    			"page": true
 	    		},
 	    		{
-	    			"name": "Claiming compensation for loss of notice?",
+	    			"name": "Would you like to claim compensation for loss of notice?",
 	    			"value": "Yes",
 	    			"page": true
 	    		}

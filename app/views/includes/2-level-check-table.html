@@ -12,8 +12,8 @@
 		</th>
 		<th class="edit-link">
 			{{#page}}
-			<a href="./{{ number }}/question-page?editing=true" class="">
-				Edit
+			<a href="./{{ number }}/question-page?change=true" class="">
+				Change <span class="visuallyhidden">answer {{ number }}. {{ name }}</span>
 			</a>
 			{{/page}}
 		</th>
@@ -26,13 +26,25 @@
 			{{ name }}
 		</td>
 		<td class="answer">
+			{{#value}}
 			{{{ value }}}
+			{{/value}}
+
+			{{^value}}
+			<a href="./{{ number }}/{{ number2 }}/question-page?editing=true" class="answer-required">
+				Answer this question
+			</a>
+			{{/value}}
 		</td>
 		<td class="edit-link">
 			{{#page}}
-			<a href="./{{ number }}/{{ number2 }}/question-page?editing=true">
-				Edit
+
+			{{#value}}
+			<a href="./{{ number }}/{{ number2 }}/question-page?change=true">
+				Change <span class="visuallyhidden">answer {{ number }}. {{ name }}</span>
 			</a>
+			{{/value}}
+
 			{{/page}}
 		</td>
 	</tr>
