@@ -25,7 +25,6 @@
 		  ]	
 	  },
 	  "name": "Apply for a vehicle operator's licence",
-	  "description": "[Description of service goes here]",
 	  "startUrl": "./summary-page",
 	  "sections": [
 	    { 

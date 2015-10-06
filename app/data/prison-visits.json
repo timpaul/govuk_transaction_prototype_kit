@@ -10,7 +10,6 @@
 		  ] 	
 	  },
 	  "name": "Visit someone in prison",
-	  "description": "[Description of service goes here]",
 	  "startUrl": "./1/question-page",
 	  "actions": [
 	  	{

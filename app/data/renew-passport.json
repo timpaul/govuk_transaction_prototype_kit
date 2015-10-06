@@ -8,7 +8,6 @@
 		  ] 	
 	  },
 	  "name": "Renew your passport",
-	  "description": "[Description of service goes here]",
 	  "startUrl": "./1/question-page",
 		"page": false,
 		"sections": [

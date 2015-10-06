@@ -16,7 +16,12 @@
 	   		{{ name }}
 	   	</h1>
 
-	   	<p class="placeholder-box">{{ description }}</p>
+	{{#description }}
+	   	<p>{{ description }}</p>
+	{{/description }}
+	{{^description }}
+	   	<p class="placeholder-box">[ Description of service goes here ]</p>
+	{{/description }}
 
 	   	<p><a href="{{ startUrl }}" class="button button-get-started">Get started</a></p>
 

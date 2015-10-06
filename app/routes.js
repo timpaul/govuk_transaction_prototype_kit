@@ -104,8 +104,8 @@ module.exports = {
       pageData.service = data.service;
 
 
-      // Don't show the service name in the header at the top level
-      if(params.section == ""){
+      // Don't show the service name in the header on start pages
+      if(params.page == "start"){
         pageData.service.name = "";
       } else {
         pageData.service.name = data.name;

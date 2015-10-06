@@ -11,7 +11,6 @@
 		  ] 	
 	  },
 	  "name": "Repossess a property",
-	  "description": "[Description of service goes here]",
 	  "startUrl": "./1/question-page",
 	  "numbered": false,
 	  "page" : false,
