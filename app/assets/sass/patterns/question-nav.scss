@@ -1,0 +1,14 @@
+.grid-row.question-nav{
+  border-bottom: 1px solid $border-colour;
+  margin: 0;
+  .column-half{
+    padding: 0;
+  }
+}
+
+.question-number{
+    margin-top: $gutter-half;
+    margin-bottom: $gutter-half;
+    font-size: 16px;
+    color: #6f777b;
+}

@@ -15,7 +15,8 @@ module.exports = {
 	    	{ url: "redundancy-payments", name: "Claim redundancy payments"  },
 	    	{ url: "vehicle-operators", name: "Apply for a vehicle operator’s licence" },
 	    	{ url: "childminder", name: "Become a childminder" },
-	    	{ url: "pip", name: "Personal Independence Payment" }
+	    	{ url: "pip", name: "Personal Independence Payment" },
+        { url: "ship-international-waste", name: "Ship waste internationally" }
 		]
 	}
 

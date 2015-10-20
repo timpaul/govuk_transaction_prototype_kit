@@ -9,12 +9,24 @@
 	<div class="grid-row">
 	  <div class="column-three-quarters">
 
-	  	<a href="../{{ prev }}/question-page" class="link-back">Back</a>
+<!--
+	  		<div class="grid-row question-nav">
+	  			<div class="column-half">
+	  		<a href="../{{ prev }}/question-page" class="link-back" title="Back to previous question">Back</a>
+	  			</div>
+	  			<div class="column-half">
+	  		<a href="../{{ prev }}/question-page" class="link-skip" title="Skip this question for now">Skip</a>
+	  			</div>
+	  		</div>
+	  	-->
+
+	  		<a href="../{{ prev }}/question-page" class="link-back" title="Back to previous question">Back</a>
+
 
 	   	<h1 class="heading-large">
 	   		<span class="heading-secondary">
-	   			<!--Question {{service.section}}-->
-	   			{{ parentSection }}
+	   			Question {{service.section}}
+	   			<!--{{ parentSection }}-->
 	   		</span>
 	   		{{#question}}
 	   			{{ question }}
@@ -73,6 +85,12 @@
 
 	  </div>
 	  <div class="column-quarter">
+
+<!--
+	  	<div class="question-nav">
+	  		<a href="">Sign out</a>
+	  	</div>
+	  -->
 
 	   	<ul class="actions">
 	   		{{# service.actions }}

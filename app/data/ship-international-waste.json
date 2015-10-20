@@ -1,0 +1,277 @@
+{
+	  "service":{
+		  "type": "notification",
+		  "actions": [
+		  	{
+		  		"action": "Print"
+		   	},
+		  	{
+		  		"action": "Submit"
+		   	}
+		  ],
+		  "meta": [
+		  	{
+		  		"name": "Notification number",
+		   		"value" : "GB 0001 005160"
+		   	},
+		  	{
+		  		"name": "Notification charge",
+		   		"value" : "£2700"
+		   	},
+		  	{
+		  		"name": "Status",
+		   		"value" : "Ready to submit"
+		   	}
+		  ]	
+	  },
+	  "name": "International waste shipments",
+	  "startUrl": "./summary-page",
+	  "page": true,
+	  "sections": [
+	    { 
+	    	"name":"Organisations involved",
+	    	"status" : "complete",
+	    	"statusMessage" : "Done",
+	    	"page" : false,
+	    	"sections": [
+	    		{
+	    			"name": "Exporter",
+	    			"question": "Who is exporting the waste?",
+	    			"value": "Sandvik Ltd.<br>Torrington, Coventry CV4 9AB, United Kingdom<br><br>Contact: Carole Spicer<br>Tel: 01734 254 354<br>Email: ijooo@kkk.com",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Producer",
+	    			"value": "Sandvik Ltd.",
+	    			"question": "Who is producing the waste?",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Site of export",
+	    			"question": "What is the site of export?",
+	    			"value": "Sandvik Ltd.",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Importer",
+	    			"question": "Who is importing the waste?",
+	    			"value": "Wolfram Ltd.<br>New St, Bergla, Austria<br><br>Contact: Alex Zierler<br>Tel: 01734 254 354<br>Email: ijooo@kkk.com",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Recovery facilities",
+	    			"question": "Who owns the recovery facilities",
+	    			"value": "Wolfram Ltd.",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Recovery site",
+	    			"question": "Where is the actual site of recovery?",
+	    			"value": "Wolfram Ltd.",
+	    			"page": true
+	    		}
+	    		]
+	    },
+	    { 
+	    	"name":"Recovery operation",
+	    	"status" : "complete",
+	    	"statusMessage" : "Done",
+	    	"page" : false,
+	    	"sections": [
+	    		{
+	    			"name": "Recovery operation codes",
+	    			"question": "Which recovery operation codes apply to this notification?",
+	    			"value": "R4",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Pre-consent facility",
+	    			"question": "Is there a pre-consent facility?",
+	    			"value": "No",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Recovery technology",
+	    			"question": "What technology is employed for these recovery codes",
+	    			"value": "Metal/Chemical recovery",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Reason for export",
+	    			"question": "Why is the waste being exported?",
+	    			"value": "Recovery facility doesn't exist in the UK",
+	    			"page": true
+	    		}
+	    		]
+	    },
+	    { 
+	    	"name":"Transportation",
+	    	"status" : "complete",
+	    	"page" : false,
+	    	"sections": [
+	    		{
+	    			"name": "Intended carriers",
+	    			"question": "Who are the intended carriers?",
+	    			"value": "Schenker Ltd.<br>New St, Coventry CV4 9AB, United Kingdom<br><br>Contact: Claudier Black<br>Tel: 01734 254 354<br>Fax: 01734 254 355<br>Email: ijooo@kkk.com",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Means of transport",
+	    			"question": "Which means of transport will be used?",
+	    			"value": "Road → Sea → Road",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Packaging types",
+	    			"question": "Which packaging types will be used?",
+	    			"value": "Drum",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Special handling requirements",
+	    			"question": "Are there any special handling requirements?",
+	    			"value": "See MSDS - Class 9 dangerous goods",
+	    			"page": true
+	    		}
+	    		]
+	    },
+	    { 
+	    	"name":"The journey",
+	    	"status" : "complete",
+	    	"page" : false,
+	    	"sections": [
+	    		{
+	    			"name": "Export route",
+	    			"question": "What is the export route of the waste?",
+	    			"value": "<div class='tab'>Entry point:<br>Competent authority:</div><div class='tab'>Ashford, United Kingdom<br>Environment Agency</div>",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Import route",
+	    			"question": "What is the import route of the waste?",
+	    			"value": "<div class='tab'>Entry point:<br>Competent authority:</div><div class='tab'>Baden-Baden, Germany<br>Bezirksregierung Düsseldorf</div>",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Transits",
+	    			"question": "Are there any transits?",
+	    			"value": "None",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Custom office",
+	    			"question": "Is there a custom office involved?",
+	    			"value": "Not applicable",
+	    			"page": true
+	    		}
+	    		]
+	    },
+	    { 
+	    	"name":"Amount and dates",
+	    	"status" : "complete",
+	    	"page" : false,
+	    	"sections": [
+	    		{
+	    			"name": "Total intended shipments",
+	    			"question": "What is the total intended number of shipments?",
+	    			"value": "20",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Total intended quantity",
+	    			"question": "What is the total intended quantity?",
+	    			"value": "360 Tonnes",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Intended departure dates",
+	    			"question": "What are the intended departure dates?",
+	    			"value": "Between 1 September 2015 and 31 August 2016",
+	    			"page": true
+	    		}
+	    		]
+	    },
+	    { 
+	    	"name":"Waste classification",
+	    	"status" : "complete",
+	    	"page" : false,
+	    	"sections": [
+	    		{
+	    			"name": "Chemical composition",
+	    			"question": "What is the chemical composition of the waste?",
+	    			"value": "Lorem ipsum dolor",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Process of generation",
+	    			"question": "How is the waste generated?",
+	    			"value": "Lorem ipsum dolor",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Physical characteristics",
+	    			"question": "What are the physical characteristics of the waste?",
+	    			"value": "Powdery / powder",
+	    			"page": true
+	    		}
+	    		]
+	    },
+	    { 
+	    	"name":"Waste codes",
+	    	"status" : "complete",
+	    	"page" : false,
+	    	"sections": [
+	    		{
+	    			"name": "Basil or OECD code",
+	    			"value": "Not listed",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "EWC code",
+	    			"value": "<div class='tab'>12 01 04</div> <div class='tab'>Non-ferrous metal dust and particles</div>",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Y codes",
+	    			"value": "<div class='tab'>Y1</div> <div class='tab'>Clinical wastes from medical care in hospitals, medical centers and clinics</div>",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "H or HP codes",
+	    			"value": "<div class='tab'>H10</div> <div class='tab'>Liberation of toxic gases in contact with air or water</div>",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "UN classes",
+	    			"value": "<div class='tab'>9</div> <div class='tab'>Miscellaneous dangerous goods</div>",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "UN numbers",
+	    			"value": "<div class='tab'>UN3077</div> <div class='tab'>Environmentally hazardous substance, solid, n.o.s. (not including waste)</div>",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "National code in country of export",
+	    			"value": "rg44",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "National code in country of import",
+	    			"value": "ge1",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Customs codes",
+	    			"value": "None",
+	    			"page": true
+	    		},
+	    		{
+	    			"name": "Other codes",
+	    			"value": "None",
+	    			"page": true
+	    		}
+	    		]
+	    }
+	    ]
+	}

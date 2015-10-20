@@ -4,15 +4,16 @@
 
 @import '../elements';
 
-.link-back {
+.link-skip {
   @include inline-block;
+  float: right;
   position: relative;
 
   @include core-16;
 
   margin-top: $gutter-half;
   margin-bottom: $gutter-half;
-  padding-left: 14px;
+  padding-right: 14px;
 
   color: $black;
 
@@ -23,30 +24,26 @@
     color: $black;
   }
 
-  text-decoration: none;  
+  text-decoration: none;
 
-  border-bottom: 1px solid $text-colour;
-
-  /*
   border-bottom: 1px solid transparent;
   &:hover {
-    border-bottom: 1px solid $text-colour;
+    border-bottom: 1px solid $black;
   }
-  */
 
   // Back arrow - left pointing black arrow
-  &::before {
+  &::after {
     content: '';
     display: block;
     width: 0;
     height: 0;
 
     border-top: 5px solid transparent;
-    border-right: 6px solid #0b0c0c;
+    border-left: 6px solid #0b0c0c;
     border-bottom: 5px solid transparent;
 
     position: absolute;
-    left: 0;
+    right: 0;
     top: 50%;
     margin-top: -6px;
   }
@@ -64,7 +61,7 @@
   // IE7 doesn't support pseudo-elements, let's fallback to an image instead.
   // Ref: http://caniuse.com/#search=%3Abefore, http://caniuse.com/#search=rgba
   @include ie-lte(8) {
-   background: file-url("icon-arrow-left.png") no-repeat 0 4px;
+   background: file-url("icon-arrow-right.png") no-repeat 0 4px;
   }
 
 }
